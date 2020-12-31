@@ -1,0 +1,340 @@
+<!doctype html><html lang=en-us prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=manifest href=manifest.webmanifest><link rel=icon type=image/png href=/img/favicon/favicon_hu2a60c33e6cc729e53465c846fe50d8b2_13867_32x32_fill_box_center_3.png><link rel=apple-touch-icon type=image/png href=/img/favicon/favicon_hu2a60c33e6cc729e53465c846fe50d8b2_13867_192x192_fill_box_center_3.png><meta name=description content="This blog post introduces code coverage with Triton"><meta name=keywords content><meta property="og:type" content="article"><meta property="og:description" content="This blog post introduces code coverage with Triton"><meta property="og:title" content="Code coverage using a dynamic symbolic execution | Romain Thomas"><meta property="og:site_name" content="Romain Thomas"><meta property="og:image" content="https://www.romainthomas.fr/post/15-10-triton-code-coverage/featured.png"><meta property="og:url" content="https://www.romainthomas.fr/post/15-10-triton-code-coverage/"><meta property="og:locale" content="en-us"><meta property="article:published_time" content="2015-10-12T00:00:00+00:00"><meta property="article:modified_time" content="2015-10-12T00:00:00+00:00"><meta property="article:tag" content><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@rh0main"><meta name=twitter:creator content="@rh0main"><meta name=twitter:title content="Code coverage using a dynamic symbolic execution | Romain Thomas"><meta name=twitter:description content="This blog post introduces code coverage with Triton"><meta name=twitter:domain content="https://www.romainthomas.fr/post/15-10-triton-code-coverage/"><meta property="twitter:image" content="https://www.romainthomas.fr/post/15-10-triton-code-coverage/featured.png"><title>Romain Thomas</title><link rel=canonical href=https://www.romainthomas.fr/post/15-10-triton-code-coverage/><link rel=stylesheet href=/css/fa-all.min.css><link rel=stylesheet href=/vendor/@glidejs/glide/dist/css/glide.core.min.css><link rel=stylesheet href=/vendor/@glidejs/glide/dist/css/glide.theme.min.css><link rel=stylesheet href=/css/theme.bundle.css><style>.hide{opacity:0}</style><noscript><style>.hide{opacity:1;!important}</style></noscript><style>.hero_background{position:relative;overflow:hidden}.hero_background:before{pointer-events:none;content:' ';display:block;position:absolute;left:0;top:0;width:100%;height:90%;z-index:1;opacity:.2;background-image:url(/img/bg_home.svg);background-repeat:repeat;background-position:50%;background-size:100%;transform:rotate(180deg)}.project_bg{position:relative;overflow:hidden}.project_bg:before{pointer-events:none;content:' ';display:block;position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;opacity:.1;background-image:url(/img/bg_project.svg);background-repeat:repeat;background-position:50%;background-size:100%;transform:rotate(180deg)}.experience_bg{position:relative;overflow:hidden}.experience_bg:before{pointer-events:none;content:' ';display:block;position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;opacity:.1;background-image:url(/img/bg_experience.svg);background-position:0 0;background-size:100%}.post_bg{position:relative;overflow:hidden}.post_bg:before{pointer-events:none;content:' ';display:block;position:absolute;left:0;top:0;width:100%;height:80%;z-index:1;opacity:.6;background-image:url(/img/bg_post.svg);background-position:0 0;background-size:100%}.contact_bg{position:relative;overflow:hidden}.contact_bg:before{pointer-events:none;content:' ';display:block;position:absolute;left:0;top:0;width:100%;height:80%;z-index:1;opacity:.2;background-image:url(/img/bg_contact.svg);background-position:0 0;background-size:100%}.footnotes p{margin-bottom:0}</style></head><body><header class=header-global><nav id=navbar-main aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark"><div class="container position-relative"><a class="navbar-brand me-lg-5" href=https://www.romainthomas.fr/><span class="navbar-brand-dark ft-ananda">R. T</span>
+<span class="navbar-brand-light ft-ananda">R. T</span></a><div class="navbar-collapse collapse me-auto" id=navbar_global><div class=navbar-collapse-header><div class=row><div class="col-6 collapse-close"><a href=#navbar_global class="fas fa-times" data-bs-toggle=collapse data-bs-target=#navbar_global aria-controls=navbar_global aria-expanded=false title=close aria-label="Toggle navigation"></a></div></div></div><ul class="navbar-nav navbar-nav-hover align-items-lg-center"><li class=nav-item><a href=https://www.romainthomas.fr/#about class="nav-link fw-bold"><span class="fa-regular fa-person-swimming"></span> About</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#posts class="nav-link fw-bold"><span class="fa-regular fa-blog"></span> Posts</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#projects class="nav-link fw-bold"><span class="fa-regular fa-terminal"></span> Projects</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#publications class="nav-link fw-bold"><span class="far fa-book-open-cover"></span> Publications</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#work-experience class="nav-link fw-bold"><span class="fa-regular fa-briefcase"></span> Work Experience</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#misc class="nav-link fw-bold"><span class="fa-regular fa-chart-network"></span> Misc</a></li><li class=nav-item><a href=https://www.romainthomas.fr/#contact class="nav-link fw-bold"><span class="fa-regular fa-binary-lock"></span> Contact</a></li></ul></div><div class="d-flex align-items-center"><button class="navbar-toggler ms-2 collapsed" type=button data-bs-toggle=collapse data-bs-target=#navbar_global aria-controls=navbar_global aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button></div></div></nav></header><main><section class="section-header pb-5 pb-sm-7 bg-primary text-white post_bg"><div class=container><div class="row justify-content-center"><div class="col-12 col-lg-10 text-center"><div class=mb-4></div><h1 class="display-3 mb-4 px-lg-5">Code coverage using a dynamic symbolic execution</h1><div class=post-meta><span class="fw-bold me-3">Jonathan Salwan
+, Romain Thomas</span>
+<span class="post-date me-3">October 12, 2015</span>
+<span class=fw-bold>11 min read</span></div></div></div></div><figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3e3 185.4"><path d="M3e3.0v185.4H0V0c496.4 115.6 996.4 173.4 15e2 173.4S2503.6 115.6 3e3.0z"/></svg></figure></section><section class="section section-lg pt-0 pb-0" id=featured><div class="container mt-n8 mt-lg-n10 z-2 pb-0"><div class="row mt-7 mx-10"><img src=/post/15-10-triton-code-coverage/featured.png class="rounded img-fluid" alt=featured.png></div></div></section><div class="section section-sm bg-white pt-4 pt-lg-4 text-black"><article class=container><div class="row justify-content-center"><div class="col-12 col-lg-9"><p><h2 id=introduction>Introduction</h2><p>Code coverage is mainly used in the vulnerability research area.
+The goal is to generate inputs which will reach different parts of the program&rsquo;s code.
+Then, if an input makes the program crash, we check if the crash can be exploited or not.
+A lot of methods exist to perform code coverage - like random testing or mutation generation - but in
+this short blog post, we will focus on code coverage using a dynamic symbolic execution (DSE)
+and explain why it&rsquo;s not a trivial task. Please, note that covering up the code doesn&rsquo;t
+mean finding every possible bugs. Some bugs do not make the program crash and this <a href=https://shell-storm.org/talks/StHack2015_Dynamic_Behavior_Analysis_using_Binary_Instrumentation_Jonathan_Salwan.pdf>talk</a>
+from slides 35 to 38 explains why. However, if we perform model checking associated
+with code coverage, it starts to get interesting =).</p><h2 id=code-coverage-and-dse>Code coverage and DSE</h2><p>Note that unlike a SSE (static symbolic execution), a DSE is applied on a trace and
+can discover new branches only if these ones are reached during the execution.
+To go through another path, we must solve one of the last branch constraints discovered from the last trace.
+Then, we repeat this operation until all branches are taken.</p><p>For example, let&rsquo;s assume a program $P$ which takes an input called $I$,
+where I may be a model $M$ or a random seed $R$. An execution is denoted $P(I)$ and returns a set of
+constraints $PC$. All $\varphi_{i}$ represent basic blocks and $\pi_i$ represent the branches constraint.
+A model $M_i$ is (at least) one valid solution of a constraint $\pi_i$. For example, $M_1 = Solution(\neg\pi_1 \land \pi_2)$.
+To discover all paths, we maintain a worklist denoted $W$ which is a set of $M$.</p><p>At the first iteration, $I = R, W = \emptyset$ and $P(I) \rightarrow PC$. Then,
+$\forall \pi \in PC, W = W \cup { Solution(\pi) }$
+and we execute once again the program such that $\forall M \in W, P(M)$.
+When a model $M$ is injected in the program&rsquo;s input, it is deleted from the worklist $W$.
+Then, we repeat this operation until $W$ is empty.</p><p><img src=dse_coverage.png alt="DSE Code Coverage"></p><p>Symbolic code coverage implies some pros and cons. For us, it is really useful when we work on a obfuscated
+binary. Indeed, applying symbolic coverage can detect opaque predicates or unreachable code but also repair
+a flattened graph (we will release soon another blog post about Triton and o-llvm). The worst con about the
+symbolic execution is when your expressions are too complexes which implies a timeout from the SMT solver or
+an impressive memory consumption (in the past, our bigger symbolic expression has consumed ~450 Go of
+RAM before timeout). This scenario mainly occurs when we analyse real large binaries or obfuscated binaries
+which contain polynomial functions. Some of these cons may partially be fixed by optimizing symbolic
+expressions but this subject will be another story to come later :).</p><h2 id=performing-code-coverage-using-triton>Performing code coverage using Triton</h2><p>Since the version <code>v0.1 build 633</code> (commit <a href=https://github.com/JonathanSalwan/Triton/commit/474fe240e66ff6ab3e3501f8d7fc88ce1fcb3ef6>474fe2</a>),
+Triton integrates everything we need to perform code coverage. These new features allow us to deal and compute
+the SMT2-Lib representation over an AST. In the rest of the blog post, we will focus on the design and the
+algorithm used to perform code coverage.</p><h3 id=algorithm>Algorithm</h3><p>As an introduction (and to not turn our brain upside down), let assume this following sample of code which
+comes from the samples directory.</p><div class=highlight><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#b00040>char</span> <span style=color:#666>*</span>serial <span style=color:#666>=</span> <span style=color:#ba2121>&#34;</span><span style=color:#b62;font-weight:700>\x31\x3e\x3d\x26\x31</span><span style=color:#ba2121>&#34;</span>;
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span><span style=color:#b00040>int</span> <span style=color:#00f>check</span>(<span style=color:#b00040>char</span> <span style=color:#666>*</span>ptr)
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span>{
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span>  <span style=color:#b00040>int</span> i <span style=color:#666>=</span> <span style=color:#666>0</span>;
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span>  <span style=color:green;font-weight:700>while</span> (i <span style=color:#666>&lt;</span> <span style=color:#666>5</span>){
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span>    <span style=color:green;font-weight:700>if</span> (((ptr[i] <span style=color:#666>-</span> <span style=color:#666>1</span>) <span style=color:#666>^</span> <span style=color:#666>0x55</span>) <span style=color:#666>!=</span> serial[i])
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>      <span style=color:green;font-weight:700>return</span> <span style=color:#666>1</span>;
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>    i<span style=color:#666>++</span>;
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>  }
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>  <span style=color:green;font-weight:700>return</span> <span style=color:#666>0</span>;
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span>}
+</span></span></code></pre></div><p>Basically, this function checks if the input is equal to <code>elite</code>, and returns <code>0</code> if it is true, otherwise
+it returns <code>1</code>. The control flow graph of this function is described below. It&rsquo;s an interesting first example,
+because to cover all basic blocks we need to find the good input.</p><p><img src=check_bbs.png alt></p><p>We can see that only one variable can be controlled, the one located at the address <code>rbp+var_18</code> which refers
+to the <code>argv[1]</code> &rsquo;s pointer. The goal is to reach all the basic blocks in the function check by computing the
+constraints and using the snapshot engine until that every basic blocks are reached. For instance, the
+constraint to reach the basic block located at the address <code>0x4005C3</code> is <code>[rbp+var_4] > 4</code> but we do not control
+this variable directly. In the other hand, the jump at the address <code>0x4005B0</code> depends on the user input and
+this constraint can be solved by performing a symbolic execution.</p><p>The algorithm which generalizes the previous idea is based on the Microsoft&rsquo;s fuzzer algorithm (<a href=http://research.microsoft.com/en-us/um/people/pg/public_psfiles/ndss2008.pdf>SAGE</a>) and the
+next diagram represents our check function with its constraints. The start and end nodes represent
+respectively the function&rsquo;s prologue (<code>0x40056D</code>) and the function&rsquo;s epilogue (<code>0x4005C8</code>).</p><p><img src=cc1.png alt></p><p>Before the first execution, we know nothing about branches&rsquo; constraints. So, as explained in the previous
+chapter, we inject some random seeds to collect the first $PC$ and build our set $W$. The trace of the first
+execution $P(I)$ is represented by the basic blocks in blue.</p><p>This execution gives us our first path constraint $P(I) \rightarrow (\pi_0 \land \neg \pi_1)$.</p><p><img src=cc2.png alt></p><p>Based on our first trace, we know that there are two branches ($\pi_0 \land \neg \pi_1$) discovered and so 2 others
+undiscovered. To reach the basic bloc $\varphi_3$, we compute the negation of the first branch constraint. If and
+only if the solution $Solution(\neg \pi_0)$ is SAT, we add the model to the worklist W.</p><p>Same for $\varphi_4$ such that $W = W \cup {Solution(\pi_0 \land \neg(\neg \pi_1))}$. Once all solutions have been generated and models added
+to the worklist, we execute every models from the worklist.</p><p><img src=cc3.png alt></p><h3 id=implementation>Implementation</h3><p>One condition to perform code coverage, is to predict the next instruction address when we are on a jump
+instruction. This condition is necessary to build the path constraint.</p><p>We can not put a callback after a branch instruction because the <code>RIP</code> register has already changed. As Triton
+creates semantics expressions for all registers, the idea is to evaluate <code>RIP</code> when we are on a branch instruction.</p><p>In a first time, we have developed a SMT evaluator to compute the <code>RIP</code> but we saw a little bit later that
+Pin provides <code>IARG_BRANCH_TARGET_ADDR</code> and <code>IARG_BRANCH_TAKEN</code> which can be used to know the next <code>RIP</code> values.
+With Pin, computing the next address is very easy, nevertheless the SMT evaluator was useful to <a href=https://github.com/JonathanSalwan/Triton/blob/c9648bb1b1f7d8a2afef0941ab267dc9387fd91c/tests/test_semantics.py>check
+instruction&rsquo;s semantics</a>.</p><p>To perform the evaluation, we implemented the <a href=https://en.wikipedia.org/wiki/Visitor_pattern>visitor pattern</a>
+to transform the SMT abstract syntax tree (AST) to a Z3 AST. This design can be used to transform our SMT AST
+into any others representations.</p><p>The Z3 AST is easier to handle and can be evaluated or simplified with Z3 API. The transformation is performed
+by <a href=https://github.com/JonathanSalwan/Triton/blob/c9648bb1b1f7d8a2afef0941ab267dc9387fd91c/src/includes/Z3ast.h>src/smt2lib/z3AST.h</a> and
+<a href=https://github.com/JonathanSalwan/Triton/blob/c9648bb1b1f7d8a2afef0941ab267dc9387fd91c/src/smt2lib/z3AST.cpp>src/smt2lib/z3AST.cpp</a>.</p><hr><p>We will now explain how the code coverage&rsquo;s tool works. Let&rsquo;s assume that inputs come from command&rsquo;s line.
+Firstly, we have:</p><div class=highlight><div style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">199
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">200
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">201
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">202
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">203
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:green;font-weight:700>def</span> <span style=color:#00f>run</span>(inputSeed, entryPoint, exitPoint, whitelist <span style=color:#666>=</span> []):
+</span></span><span style=display:flex><span>  <span style=color:#666>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green;font-weight:700>if</span> __name__<span style=color:#666>==</span><span style=color:#ba2121>&#39;__main__&#39;</span>:
+</span></span><span style=display:flex><span>  TritonExecution<span style=color:#666>.</span>run(<span style=color:#ba2121>&#34;bad !&#34;</span>, <span style=color:#666>0x400480</span>, <span style=color:#666>0x40061B</span>, [<span style=color:#ba2121>&#34;main&#34;</span>, <span style=color:#ba2121>&#34;check&#34;</span>]) <span style=color:#408080;font-style:italic># crackme_xor</span></span></span></code></pre></td></tr></table></div></div><p>At line 176, we define the input seed <code>bad !</code> which is the first program&rsquo;s argument (<code>argv[1]</code>). Then, we give
+the address from the beginning of the code coverage (<strong>start block</strong>) - it&rsquo;s at this address that we will take
+a snapshot. The third argument matches with the <strong>end block</strong> - it&rsquo;s at this address that we will restore the
+snapshot. Finally, we can set a whitelist to avoid specific functions like library&rsquo;s functions,
+cryptographic&rsquo;s function and so on.</p><div class=highlight><div style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">135
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">136
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">137
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">138
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">139
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">140
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">141
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">142
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">143
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">144
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">145
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">146
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">147
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">148
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">149
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">150
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">151
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">152
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">153
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">154
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">155
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:green;font-weight:700>def</span> <span style=color:#00f>mainAnalysis</span>(threadId):
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green>print</span> <span style=color:#ba2121>&#34;[+] In main&#34;</span>
+</span></span><span style=display:flex><span>  rdi <span style=color:#666>=</span> getRegValue(IDREF<span style=color:#666>.</span>REG<span style=color:#666>.</span>RDI) <span style=color:#408080;font-style:italic># argc</span>
+</span></span><span style=display:flex><span>  rsi <span style=color:#666>=</span> getRegValue(IDREF<span style=color:#666>.</span>REG<span style=color:#666>.</span>RSI) <span style=color:#408080;font-style:italic># argv</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  argv0_addr <span style=color:#666>=</span> getMemValue(rsi, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>QWORD)      <span style=color:#408080;font-style:italic># argv[0] pointer</span>
+</span></span><span style=display:flex><span>  argv1_addr <span style=color:#666>=</span> getMemValue(rsi <span style=color:#666>+</span> <span style=color:#666>8</span>, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>QWORD)  <span style=color:#408080;font-style:italic># argv[1] pointer</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green>print</span> <span style=color:#ba2121>&#34;[+] In main() we set :&#34;</span>
+</span></span><span style=display:flex><span>  od <span style=color:#666>=</span> OrderedDict(<span style=color:green>sorted</span>(TritonExecution<span style=color:#666>.</span>input<span style=color:#666>.</span>dataAddr<span style=color:#666>.</span>items()))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>for</span> k,v <span style=color:#a2f;font-weight:700>in</span> od<span style=color:#666>.</span>iteritems():
+</span></span><span style=display:flex><span>      <span style=color:green>print</span> <span style=color:#ba2121>&#34;</span><span style=color:#b62;font-weight:700>\t</span><span style=color:#ba2121>[0x</span><span style=color:#b68;font-weight:700>%x</span><span style=color:#ba2121>] = </span><span style=color:#b68;font-weight:700>%x</span><span style=color:#ba2121> </span><span style=color:#b68;font-weight:700>%c</span><span style=color:#ba2121>&#34;</span> <span style=color:#666>%</span> (k, v, v)
+</span></span><span style=display:flex><span>      setMemValue(k, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>BYTE, v)
+</span></span><span style=display:flex><span>      convertMemToSymVar(k, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>BYTE, <span style=color:#ba2121>&#34;addr_</span><span style=color:#b68;font-weight:700>%d</span><span style=color:#ba2121>&#34;</span> <span style=color:#666>%</span> k)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>for</span> idx, byte <span style=color:#a2f;font-weight:700>in</span> <span style=color:green>enumerate</span>(TritonExecution<span style=color:#666>.</span>input<span style=color:#666>.</span>data):
+</span></span><span style=display:flex><span>      <span style=color:green;font-weight:700>if</span> argv1_addr <span style=color:#666>+</span> idx <span style=color:#a2f;font-weight:700>not</span> <span style=color:#a2f;font-weight:700>in</span> TritonExecution<span style=color:#666>.</span>input<span style=color:#666>.</span>dataAddr: <span style=color:#408080;font-style:italic># Not overwrite the previous setting</span>
+</span></span><span style=display:flex><span>          <span style=color:green>print</span> <span style=color:#ba2121>&#34;</span><span style=color:#b62;font-weight:700>\t</span><span style=color:#ba2121>[0x</span><span style=color:#b68;font-weight:700>%x</span><span style=color:#ba2121>] = </span><span style=color:#b68;font-weight:700>%x</span><span style=color:#ba2121> </span><span style=color:#b68;font-weight:700>%c</span><span style=color:#ba2121>&#34;</span> <span style=color:#666>%</span> (argv1_addr <span style=color:#666>+</span> idx, <span style=color:green>ord</span>(byte), <span style=color:green>ord</span>(byte))
+</span></span><span style=display:flex><span>          setMemValue(argv1_addr <span style=color:#666>+</span> idx, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>BYTE, <span style=color:green>ord</span>(byte))
+</span></span><span style=display:flex><span>          convertMemToSymVar(argv1_addr <span style=color:#666>+</span> idx, IDREF<span style=color:#666>.</span>CPUSIZE<span style=color:#666>.</span>BYTE, <span style=color:#ba2121>&#34;addr_</span><span style=color:#b68;font-weight:700>%d</span><span style=color:#ba2121>&#34;</span> <span style=color:#666>%</span> idx)</span></span></code></pre></td></tr></table></div></div><p>The next code being executed is the mainAnalysis callback, we inject values to the inputs selected
+(line 148, 154) and we convert these inputs as symbolic variables (line 149, 155).</p><p>All inputs selected are stored in a global variable called <code>TritonExecution.input</code>. Then, we can begin the code
+exploration.</p><div class=highlight><div style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">61
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:green;font-weight:700>if</span> instruction<span style=color:#666>.</span>getAddress() <span style=color:#666>==</span> TritonExecution<span style=color:#666>.</span>entryPoint <span style=color:#a2f;font-weight:700>and</span> <span style=color:#a2f;font-weight:700>not</span> isSnapshotEnabled():
+</span></span><span style=display:flex><span>  <span style=color:green>print</span> <span style=color:#ba2121>&#34;[+] Take Snapshot&#34;</span>
+</span></span><span style=display:flex><span>  takeSnapshot()
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>return</span></span></span></code></pre></td></tr></table></div></div><p>When we are at the entry point, we take a snapshot in order to replay code exploration with a new input.</p><div class=highlight><div style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">64
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">65
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">66
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">67
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">68
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">69
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">70
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">71
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">72
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">73
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">74
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:green;font-weight:700>if</span> instruction<span style=color:#666>.</span>isBranch() <span style=color:#a2f;font-weight:700>and</span> instruction<span style=color:#666>.</span>getRoutineName() <span style=color:#a2f;font-weight:700>in</span> TritonExecution<span style=color:#666>.</span>whitelist:
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  addr1 <span style=color:#666>=</span> instruction<span style=color:#666>.</span>getAddress() <span style=color:#666>+</span> <span style=color:#666>2</span>                <span style=color:#408080;font-style:italic># Address next to this one</span>
+</span></span><span style=display:flex><span>  addr2 <span style=color:#666>=</span> instruction<span style=color:#666>.</span>getOperands()[<span style=color:#666>0</span>]<span style=color:#666>.</span>getValue()     <span style=color:#408080;font-style:italic># Address in the instruction condition</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#408080;font-style:italic># [PC id, address taken, address not taken]</span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>if</span> instruction<span style=color:#666>.</span>isBranchTaken():
+</span></span><span style=display:flex><span>    TritonExecution<span style=color:#666>.</span>myPC<span style=color:#666>.</span>append([ripId, addr2, addr1])
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>else</span>:
+</span></span><span style=display:flex><span>    TritonExecution<span style=color:#666>.</span>myPC<span style=color:#666>.</span>append([ripId, addr1, addr2])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>return</span></span></span></code></pre></td></tr></table></div></div><p>This test above checks if we are on a branch instruction like (<code>jnz, jle</code> &mldr;) and if we are in a function which
+is into the <em>white list</em>. If so, we get the two possible addresses (<code>addr1</code> and <code>addr2</code>) and the effective address
+is computed by <code>isBranchTaken()</code> (line 69).</p><p>Then, we store into the path constraint the <code>RIP</code> expression, the address taken and the address not taken
+(line 73-76).</p><div class=highlight><div style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:green;font-weight:700>if</span> instruction<span style=color:#666>.</span>getAddress() <span style=color:#666>==</span> TritonExecution<span style=color:#666>.</span>exitPoint:
+</span></span><span style=display:flex><span>  <span style=color:green>print</span> <span style=color:#ba2121>&#34;[+] Exit point&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#408080;font-style:italic># SAGE algorithm</span>
+</span></span><span style=display:flex><span>  <span style=color:#408080;font-style:italic># http://research.microsoft.com/en-us/um/people/pg/public_psfiles/ndss2008.pdf</span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>for</span> j <span style=color:#a2f;font-weight:700>in</span> <span style=color:green>range</span>(TritonExecution<span style=color:#666>.</span>input<span style=color:#666>.</span>bound, <span style=color:green>len</span>(TritonExecution<span style=color:#666>.</span>myPC)):
+</span></span><span style=display:flex><span>    expr <span style=color:#666>=</span> []
+</span></span><span style=display:flex><span>    <span style=color:green;font-weight:700>for</span> i <span style=color:#a2f;font-weight:700>in</span> <span style=color:green>range</span>(<span style=color:#666>0</span>,j):
+</span></span><span style=display:flex><span>        ripId <span style=color:#666>=</span> TritonExecution<span style=color:#666>.</span>myPC[i][<span style=color:#666>0</span>]
+</span></span><span style=display:flex><span>        symExp <span style=color:#666>=</span> getFullExpression(getSymExpr(ripId)<span style=color:#666>.</span>getAst())
+</span></span><span style=display:flex><span>        addr <span style=color:#666>=</span> TritonExecution<span style=color:#666>.</span>myPC[i][<span style=color:#666>1</span>]
+</span></span><span style=display:flex><span>        expr<span style=color:#666>.</span>append(smt2lib<span style=color:#666>.</span>smtAssert(smt2lib<span style=color:#666>.</span>equal(symExp, smt2lib<span style=color:#666>.</span>bv(addr,  <span style=color:#666>64</span>))))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    ripId <span style=color:#666>=</span> TritonExecution<span style=color:#666>.</span>myPC[j][<span style=color:#666>0</span>]
+</span></span><span style=display:flex><span>    symExp <span style=color:#666>=</span> getFullExpression(getSymExpr(ripId)<span style=color:#666>.</span>getAst())
+</span></span><span style=display:flex><span>    addr <span style=color:#666>=</span> TritonExecution<span style=color:#666>.</span>myPC[j][<span style=color:#666>2</span>]
+</span></span><span style=display:flex><span>    expr<span style=color:#666>.</span>append(smt2lib<span style=color:#666>.</span>smtAssert(smt2lib<span style=color:#666>.</span>equal(symExp, smt2lib<span style=color:#666>.</span>bv(addr,  <span style=color:#666>64</span>))))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    expr <span style=color:#666>=</span> smt2lib<span style=color:#666>.</span>compound(expr)
+</span></span><span style=display:flex><span>    model <span style=color:#666>=</span> getModel(expr)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:green;font-weight:700>if</span> <span style=color:green>len</span>(model) <span style=color:#666>&gt;</span> <span style=color:#666>0</span>:
+</span></span><span style=display:flex><span>        newInput <span style=color:#666>=</span> TritonExecution<span style=color:#666>.</span>input
+</span></span><span style=display:flex><span>        newInput<span style=color:#666>.</span>setBound(j <span style=color:#666>+</span> <span style=color:#666>1</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:green;font-weight:700>for</span> k,v <span style=color:#a2f;font-weight:700>in</span> model<span style=color:#666>.</span>items():
+</span></span><span style=display:flex><span>            symVar <span style=color:#666>=</span> getSymVar(k)
+</span></span><span style=display:flex><span>            newInput<span style=color:#666>.</span>addDataAddress(symVar<span style=color:#666>.</span>getKindValue(), v)
+</span></span><span style=display:flex><span>        <span style=color:green>print</span> newInput<span style=color:#666>.</span>dataAddr
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        isPresent <span style=color:#666>=</span> <span style=color:green;font-weight:700>False</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:green;font-weight:700>for</span> inp <span style=color:#a2f;font-weight:700>in</span> TritonExecution<span style=color:#666>.</span>worklist:
+</span></span><span style=display:flex><span>            <span style=color:green;font-weight:700>if</span> inp<span style=color:#666>.</span>dataAddr <span style=color:#666>==</span> newInput<span style=color:#666>.</span>dataAddr:
+</span></span><span style=display:flex><span>                isPresent <span style=color:#666>=</span> <span style=color:green;font-weight:700>True</span>
+</span></span><span style=display:flex><span>                <span style=color:green;font-weight:700>break</span>
+</span></span><span style=display:flex><span>        <span style=color:green;font-weight:700>if</span> <span style=color:#a2f;font-weight:700>not</span> isPresent:
+</span></span><span style=display:flex><span>            TritonExecution<span style=color:#666>.</span>worklist<span style=color:#666>.</span>append(newInput)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#408080;font-style:italic># If there is input to test in the worklist, we restore the snapshot</span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>if</span> <span style=color:green>len</span>(TritonExecution<span style=color:#666>.</span>worklist) <span style=color:#666>&gt;</span> <span style=color:#666>0</span> <span style=color:#a2f;font-weight:700>and</span> isSnapshotEnabled():
+</span></span><span style=display:flex><span>      <span style=color:green>print</span> <span style=color:#ba2121>&#34;[+] Restore snapshot&#34;</span>
+</span></span><span style=display:flex><span>      restoreSnapshot()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:green;font-weight:700>return</span></span></span></code></pre></td></tr></table></div></div><p>The last step happens when we are on the <strong>exit point</strong>. Lines 84 to 120 are the SAGE implementation.
+In few words, we browse the path constraints&rsquo; list and for each <strong>PC</strong>, we try to get the model which satisfies
+the negation. If there is a valid model to reach the new target basic block, we add the model into the worklist.</p><p>Once all models are inserted into the worklist, we restore the snapshot and we re-inject each model as input seed.</p><p>The full code can be found <a href=https://github.com/JonathanSalwan/Triton/blob/c9648bb1b1f7d8a2afef0941ab267dc9387fd91c/tools/code_coverage.py>here</a> and its execution on our example looks like this:</p><div class=highlight><pre tabindex=0 style=-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ ./triton ./tools/code_coverage.py ./samples/crackmes/crackme_xor abc
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Take Snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>62</span> b
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>61</span> a
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>64</span> d
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>20</span>
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>21</span> !
+</span></span><span style=display:flex><span>loose
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>{</span>140726196774221: 101<span style=color:#666>}</span>
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Restore snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>61</span> a
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>64</span> d
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>20</span>
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>21</span> !
+</span></span><span style=display:flex><span>loose
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>{</span>140726196774221: 101, 140726196774222: 108<span style=color:#666>}</span>
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Restore snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> 6c l
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>64</span> d
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>20</span>
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>21</span> !
+</span></span><span style=display:flex><span>loose
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>{</span>140726196774221: 101, 140726196774222: 108, 140726196774223: 105<span style=color:#666>}</span>
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Restore snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> 6c l
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>69</span> i
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>20</span>
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>21</span> !
+</span></span><span style=display:flex><span>loose
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>{</span>140726196774224: 116, 140726196774221: 101, 140726196774222: 108, 140726196774223: 105<span style=color:#666>}</span>
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Restore snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> 6c l
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>69</span> i
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>74</span> t
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>21</span> !
+</span></span><span style=display:flex><span>loose
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>{</span>140726196774224: 116, 140726196774225: 101, 140726196774221: 101, 140726196774222: 108, 140726196774223: 105<span style=color:#666>}</span>
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Restore snapshot
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> In main<span style=color:#666>()</span> we <span style=color:green>set</span> :
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254d<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254e<span style=color:#666>]</span> <span style=color:#666>=</span> 6c l
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef8254f<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>69</span> i
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82550<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>74</span> t
+</span></span><span style=display:flex><span>        <span style=color:#666>[</span>0x7ffd5ef82551<span style=color:#666>]</span> <span style=color:#666>=</span> <span style=color:#666>65</span> e
+</span></span><span style=display:flex><span>Win
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Exit point
+</span></span><span style=display:flex><span><span style=color:#666>[</span>+<span style=color:#666>]</span> Done !</span></span></code></pre></div><h3 id=further-improvement>Further improvement</h3><p>Currently, the evaluator is quite slow and we loose a lot of time to evaluate expressions. One feature that
+should improve the evaluator speed is a SMT simplifier. We plan to develop a passes system (like LLVM) to
+simplify the SMT tree.</p><p>The goal is to register some expressions transformation rules before sending expressions to the evaluator or
+the solver. For example, that&rsquo;s what <a href=https://github.com/cea-sec/miasm/tree/7ee593d00488e75dadb6edad7ffe5a7dcf6b155d/miasm/expression>miasm2 already does</a>.</p><p><img src=./chain.svg alt></p><p>There are a lot of mini tricks to lighten symbolic expressions which are easy to implement and really beneficial.
+For example, the transformation of the expression
+<code>rax1 = (bvxor rax0 rax0) -> rax1 = (_ bv64 0)</code>
+will break the <code>rax</code>&rsquo;s symbolic expression chain.</p><h2 id=conclusion>Conclusion</h2><p>Although the code coverage using a symbolic resolution is a nice way to cover a code without guessing the
+inputs, it&rsquo;s clearly not a trivial task. The paths explosion implies the memory consumption and in several
+cases the expressions are too complex to be computed but this method remains truly effective on short parts
+of code.</p><div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4"><div class="p-4 rounded col-12 alert alert-info" style=background-color:#fafcff><div class="d-flex px-3"><div><div class="icon icon-sm icon-secondary"><span class="fas fa-circle-info" style=color:#084298></span></div></div><div class=ps-4><h3 class="h5 m-0 mb-1" style=color:#084298>Note</h3>To improve the symbolic coverage, it could be interesting to deal with bits-flip/random seeds when
+expressions are too complex or to deal with symbolic execution and abstract domains.</div></div></div></div></p></div></div></div></div></main><script src=/vendor/bootstrap/dist/js/bootstrap.min.js></script>
+<script src=/vendor/headroom.js/dist/headroom.min.js></script>
+<script src=/vendor/onscreen/dist/on-screen.umd.min.js></script>
+<script src=/vendor/jarallax/dist/jarallax.min.js></script>
+<script src=/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js></script>
+<script src=/js/theme.bundle.js></script>
+<script src=/vendor/@glidejs/glide/dist/glide.min.js></script>
+<script src=/js/anime.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script>function katex_load(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\begin{equation}",right:"\\end{equation}",display:!0},{left:"\\begin{align}",right:"\\end{align}",display:!0},{left:"\\begin{alignat}",right:"\\end{alignat}",display:!0},{left:"\\begin{gather}",right:"\\end{gather}",display:!0},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})}</script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous onload=katex_load()></script></body></html>

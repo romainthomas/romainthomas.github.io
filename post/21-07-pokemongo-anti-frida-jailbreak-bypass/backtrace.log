@@ -1,0 +1,63 @@
+Hardware Model:      iPhone8,1
+Process:             pokemongo [3336]
+Path:                /private/var/containers/Bundle/Application/AE692392-9CBB-4B14-913E-FB802D59D8F7/pokemongo.app/pokemongo
+Identifier:          com.nianticlabs.pokemongo
+Version:             0 (0.211.2)
+AppStoreTools:       12E262
+AppVariant:          1:iPhone8,1:13
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           com.nianticlabs.pokemongo [386]
+
+
+Date/Time:           2021-07-04 04:46:27.8301 +0200
+Launch Time:         2021-07-04 04:46:27.0935 +0200
+OS Version:          iPhone OS 14.2 (18B92)
+Release Type:        User
+Baseband Version:    8.02.01
+Report Version:      104
+
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0x000000020ac46ab8
+VM Region Info: 0x20ac46ab8 is not in any region.  Bytes after previous region: 506981049  Bytes before following region: 1966839112
+      REGION TYPE                 START - END      [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      unused shlib __TEXT      1ebb10000-1ec8c8000 [ 13.7M] r--/r-- SM=COW  ... this process
+--->  GAP OF 0x93738000 BYTES
+      MALLOC_NANO              280000000-2a0000000 [512.0M] rw-/rwx SM=PRV
+
+Termination Signal: Segmentation fault: 11
+Termination Reason: Namespace SIGNAL, Code 0xb
+Terminating Process: exc handler [3336]
+Triggered by Thread:  0
+
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0   ???                           	0x000000020ac46ab8 0 + 8770579128
+1   libdyld.dylib                 	0x0000000184df8304 invocation function for block in dyld3::AllImages::runAllInitializersInImage(dyld3::closure::Image const*, dyld3::MachOLoaded const*) + 136
+2   libdyld.dylib                 	0x0000000184dea5b0 dyld3::closure::Image::forEachInitializer(void const*, void (void const*) block_pointer) const + 96
+3   libdyld.dylib                 	0x0000000184df8160 invocation function for block in dyld3::AllImages::runInitialzersBottomUp(dyld3::closure::Image const*) + 296
+4   libdyld.dylib                 	0x0000000184deae6c dyld3::closure::Image::forEachImageToInitBefore(void (unsigned int, bool&) block_pointer) const + 92
+5   libdyld.dylib                 	0x0000000184df8b48 dyld3::AllImages::loadImage(Diagnostics&, char const*, unsigned int, dyld3::closure::DlopenClosure const*, bool, bool, bool, bool, void const*) + 776
+6   libdyld.dylib                 	0x0000000184df8698 dyld3::AllImages::dlopen(Diagnostics&, char const*, bool, bool, bool, bool, bool, void const*, bool) + 872
+7   libdyld.dylib                 	0x0000000184dfa2b4 dyld3::dlopen_internal(char const*, int, void*) + 368
+8   libdyld.dylib                 	0x0000000184ded5b0 dlopen_internal(char const*, int, void*) + 108
+9   CoreFoundation                	0x00000001850ed038 _CFBundleDlfcnLoadFramework + 136
+10  CoreFoundation                	0x00000001850be974 _CFBundleLoadExecutableAndReturnError + 376
+11  Foundation                    	0x0000000186359ba8 -[NSBundle loadAndReturnError:] + 332
+12  pokemongo                     	0x00000001041a7c5c 0x1041a0000 + 31836
+13  pokemongo                     	0x00000001041a7d50 0x1041a0000 + 32080
+14  libdyld.dylib                 	0x0000000184de9588 start + 4
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x00000001041e4a00   x1: 0x0000000000000407   x2: 0x0000000000000407   x3: 0x000000013000e400
+    x4: 0x0000000000000011   x5: 0x000000013000e400   x6: 0x0000000000001800   x7: 0x0000000000000000
+    x8: 0x000000020ac46ab8   x9: 0x000000010bdf5490  x10: 0x0000000000000000  x11: 0x00000000d45877b5
+   x12: 0x0000000000004009  x13: 0x0000000000003fff  x14: 0x0000000000000031  x15: 0x000000000000d697
+   x16: 0x00000001cb7df9b8  x17: 0x000000000000d697  x18: 0x0000000000000000  x19: 0x000000016bc56490
+   x20: 0x000000016bc595ee  x21: 0x000000016bc5947b  x22: 0x000000016bc58466  x23: 0x000000016bc5742e
+   x24: 0x0000000000000001  x25: 0x0000000000000023  x26: 0x0000000000000030  x27: 0x000000016bc56490
+   x28: 0x000000016bc56490   fp: 0x000000016bc5a350   lr: 0x000000010abbdcd0
+    sp: 0x000000016bc56490   pc: 0x000000020ac46ab8 cpsr: 0x20000000
+   esr: 0x82000006 (Instruction Abort) Translation fault
+

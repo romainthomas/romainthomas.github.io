@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="10cm" viewBox="314 236 614 189" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs/>
+  <g id="Nouveau calque 1">
+    <rect style="fill: #EAEAEA; fill-opacity: 0.454902; stroke-opacity: 1; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="315.439" y="237.964" width="611.774" height="186.476" rx="6" ry="6"/>
+  </g>
+  <g id="Arrière-plan">
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="556.742" y="307.678" width="130" height="84" rx="0" ry="0"/>
+      <text font-size="15.7932" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="621.742" y="354.458">
+        <tspan x="621.742" y="354.458">Simplifier</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="779.284" y="267.24" width="122.012" height="45.896" rx="0" ry="0"/>
+      <text font-size="15.7932" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="840.29" y="294.967">
+        <tspan x="840.29" y="294.967">Evaluator</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="465.099" y1="349.678" x2="547.006" y2="349.678"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="554.506,349.678 544.506,354.678 547.006,349.678 544.506,344.678 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="686.742" y1="349.678" x2="771.094" y2="295.452"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="777.403,291.397 771.695,301.01 771.094,295.452 766.287,292.598 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 686.742,349.678 A 43.0105,43.0105 0 1 0 623.95,298.382"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="622.014,305.459 618.266,294.925 622.925,298.014 628.192,296.141 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="779.284" y="352.909" width="122.012" height="45.896" rx="0" ry="0"/>
+      <text font-size="15.7932" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="840.29" y="380.637">
+        <tspan x="840.29" y="380.637">SAT solver</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="686.742" y1="349.678" x2="769.915" y2="373.207"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="777.132,375.249 766.149,377.338 769.915,373.207 768.871,367.715 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="335.099" y="307.678" width="130" height="84" rx="0" ry="0"/>
+      <text font-size="15.7932" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="400.099" y="354.458">
+        <tspan x="400.099" y="354.458">SMT tree</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
