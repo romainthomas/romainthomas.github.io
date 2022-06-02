@@ -611,17 +611,17 @@ to perform the actions listed above.</p>
 </tr>
 <tr>
 <td style="text-align:left">fknalp</td>
-<td style="text-align:left">Lua wrapper<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td style="text-align:left">Lua wrapper<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td style="text-align:left">FakeNativeAddLocationProvider</td>
 </tr>
 <tr>
 <td style="text-align:left">fkngsu</td>
-<td style="text-align:left">Lua wrapper<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td style="text-align:left">Lua wrapper<sup id="fnref2:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td style="text-align:left">FakeNativeGpsStatusUpdate</td>
 </tr>
 <tr>
 <td style="text-align:left">fknlu</td>
-<td style="text-align:left">Lua wrapper<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
+<td style="text-align:left">Lua wrapper<sup id="fnref3:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></td>
 <td style="text-align:left">FakeNativeLocationUpdate</td>
 </tr>
 <tr>
@@ -1720,41 +1720,41 @@ my current employer.</p>
 </div>
 
 
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>O-LLVM provides control-flow obfuscation that can be <em>recovered</em> with emulation.
 On the other hand, the data-flow (function parameters, stack values, memory accesses) can be analysed at a basic-block level with static analysis.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><b class="red">libmain.so</b> is also <strong>statically</strong> linked against other libraries like <a href="https://github.com/jmpews/Dobby">jmpews/Dobby</a>,
 <a href="https://github.com/nlohmann/json">nlohmann/json</a>, <a href="https://github.com/sqlite/sqlite">sqlite</a> &hellip;&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Modded apps use similar tricks as discussed in <a href="https://blog.quarkslab.com/android-application-diffing-analysis-of-modded-version.html#defeating-obfuscation">Android Application Diffing: Analysis of Modded Version</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
-<p>In order to arbitrarily call the underlying function when needed.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:4">
+<p>In order to arbitrarily call the underlying function when needed.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>The package names are stripped with Proguard but we can quite easily recover those packages.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Basically, they renamed <a href="https://github.com/jmpews/Dobby/blob/bba23cbee8e3cfff5622ef8b63fb797703baea5f/include/dobby.h#L157">DobbyHook</a> in <code>FbbUePBslRNHWkdS</code>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>The event is triggered when <code>nativeMuteMasterAudio</code> or <code>nativeRender</code> is registered and they
 get the base address by iterating over <code>/proc/&lt;pid&gt;/maps</code>.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:8" role="doc-endnote">
+<li id="fn:8">
 <p>O-LLVM seems not applied on this function&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:9" role="doc-endnote">
+<li id="fn:9">
 <p>One can also hook the AES encrypt/decrypt functions whose prototype is <code>(uint8_*t key_schedule, uint8_t* inout_buffer, size_t size)</code>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/21-11-pgsharp-analysis/featured.png"/></item><item><title>Gotta Catch 'Em All: Frida &amp; jailbreak detection</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/21-07-pokemongo-anti-frida-jailbreak-bypass/</link><pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/21-07-pokemongo-anti-frida-jailbreak-bypass/</guid><description>This blog post analyzes the Frida and Jailbreak detection in PokemonGO for iOS.</description><content:encoded><![CDATA[<style>
   .green {
     color:green;
@@ -2558,31 +2558,31 @@ jailbreak detections.</p>
 </tr>
 </tbody>
 </table>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>iPhone 6 running on iOS 14.2 with checkra1n.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>We can identify them by trial and error.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>ETA: likely by the end of the year&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>The Mach-O format is very suitable for this feature as
 the header in mapped in memory. Therefore, it eases the parsing.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>More generally, it can encode local data (strings, bytes arrays, &hellip;)&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Protobuf strings can be identified as they usually start with <code>0xA</code>, <code>0xB</code>, followed by their lengths
 and the string itself (see: <a href="https://developers.google.com/protocol-buffers/docs/encoding#strings">protocol-buffers/docs/encoding</a>)&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/21-07-pokemongo-anti-frida-jailbreak-bypass/featured.png"/></item><item><title>r2-pay: whitebox (part 2)</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part2/</link><pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part2/</guid><description>This second blog post explains how to recover the whitebox&amp;rsquo;s key from the obfuscated library libnative-lib.so</description><content:encoded><![CDATA[<style>
   .green {
     color:green;
@@ -2898,23 +2898,23 @@ Implementations</a> by Philippe Teuwen (<a href="https://twitter.com/doegox">@do
 </li>
 </ul>
 <h3 id="references">References</h3>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://developer.android.com/reference/android/content/Context">https://developer.android.com/reference/android/content/Context</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><a href="https://calebfenton.github.io/2017/04/05/creating_java_vm_from_android_native_code/">https://calebfenton.github.io/2017/04/05/creating_java_vm_from_android_native_code/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>QBDI will execute the function using the <a href="https://qbdi.readthedocs.io/en/stable/api_cpp.html#execution-filtering">ExecBroker</a> mechanism.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>It is the output of the function when entering <code>1234</code> in the PIN field and <code>4567</code> in the amount field.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part2/featured.png"/></item><item><title>r2-pay: anti-debug, anti-root &amp; anti-frida (part 1)</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part1/</link><pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part1/</guid><description>This first blog post describes the protections in the challenge r2-pay.</description><content:encoded><![CDATA[<style>
   .green {
     color:green;
@@ -3389,23 +3389,23 @@ and <u>Gautam Arvind</u> (<a href="https://twitter.com/darvincisec">@darvincisec
 <p>Also thanks to <u><a href="https://www.quarkslab.com">Quarkslab</a></u> that allowed this publication.
 For those who are interested in similar topics, you can take a look at the Quarkslab&rsquo;s <a href="https://blog.quarkslab.com/">blog</a>.</p>
 <h3 id="references">References</h3>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://github.com/GoSSIP-SJTU/Armariris">GoSSIP-SJTU/Armariris</a> - <a href="https://github.com/GoSSIP-SJTU/Armariris/blob/0cba41329244a29c7cb94e25458191b68967b6e8/lib/Transforms/Obfuscation/StringObfuscation.cpp#L140"><code>StringObfuscation.cpp#L140</code></a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><a href="https://developer.android.com/training/articles/perf-jni#native-libraries">https://developer.android.com/training/articles/perf-jni#native-libraries</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><a href="https://github.com/QBDI/QBDI/blob/a20653f07df3ae78250e7ecf28ed699b2d727027/include/QBDI/VM.h#L296-L305"><code>addVMEventCB(VMEvent::BASIC_BLOCK_ENTRY, ...);</code></a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p><a href="https://android.googlesource.com/platform/bionic/+/refs/tags/android-9.0.0_r60/linker/linker_soinfo.cpp#420"><code>linker/linker_soinfo.cpp:420</code></a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part1/featured.png"/></item><item><title>A Glimpse Into Tencent's Legu Packer</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/a-glimpse-into-tencents-legu-packer/</link><pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/a-glimpse-into-tencents-legu-packer/</guid><description>Analysis of Tencent Legu: a packer for Android applications.</description><content:encoded><![CDATA[<style>
   .packedfile {
     color:green;
@@ -3536,23 +3536,23 @@ along with a suspicious application <sup id="fnref:4"><a href="#fn:4" class="foo
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>Thanks to my colleagues who proofread this article.</p>
 <h3 id="references">References</h3>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="http://www.oberhumer.com/opensource/ucl/">http://www.oberhumer.com/opensource/ucl/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><a href="https://en.wikipedia.org/wiki/XTEA">https://en.wikipedia.org/wiki/XTEA</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><a href="http://androidxref.com/4.4.4_r1/xref/dalvik/vm/UtfString.cpp#88">http://androidxref.com/4.4.4_r1/xref/dalvik/vm/UtfString.cpp#88</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p><a href="https://www.virustotal.com/gui/file/708e6967920dcf2789b7183d714e73ab79a2f8b3ca71929b12aadeb2c58c2867/detection">https://www.virustotal.com/gui/file/708e6967920dcf2789b7183d714e73ab79a2f8b3ca71929b12aadeb2c58c2867/detection</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/a-glimpse-into-tencents-legu-packer/featured.png"/></item><item><title>Android Native Library Analysis with QBDI</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/android-native-library-analysis-with-qbdi/</link><pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/android-native-library-analysis-with-qbdi/</guid><description>This blog post deals with QBDI and how it can be used to reverse an Android JNI library</description><content:encoded><![CDATA[<div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4">
   <div class="p-4 rounded col-12 alert alert-info" style="background-color: #FAFCFF">
     <div class="d-flex px-3"><div>
@@ -3996,35 +3996,35 @@ to work on the concepts involved in this DBI.</p>
 <p>Thanks to the LLVM community to provide such framework without which this project would not be possible.</p>
 <p>Thanks to my Quarkslab colleagues who proofread this article.</p>
 <h2 id="references">References</h2>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Frida modifies fields of the <code>art::ArtMethod</code> object associated with the Java method.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p><a href="https://qbdi.quarkslab.com/QBDI_34c3.pdf">Slides</a> - <a href="https://media.ccc.de/v/34c3-9006-implementing_an_llvm_based_dynamic_binary_instrumentation_framework">Talk</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><a href="https://github.com/QBDI/QBDI/blob/master/examples">https://github.com/QBDI/QBDI/blob/master/examples</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>DroidGuard being the SafetyNet module that collects information about the device.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>The name has been intentionally changed.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Plus the <code>this</code> parameter which is a <code>jclass</code> object for a static method.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>Even though static analysis would be enough in this case.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:8" role="doc-endnote">
+<li id="fn:8">
 <p>Nexus 5X - Android 8.1.0 - Rooted with Magisk.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/android-native-library-analysis-with-qbdi/featured.png"/></item><item><title>Android crackme challenge</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/android-crackme/</link><pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/android-crackme/</guid><description>Android crackme that uses system&amp;rsquo;s internals</description><content:encoded><![CDATA[<div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4">
   <div class="p-4 rounded col-12 alert alert-info" style="background-color: #FAFCFF">
     <div class="d-flex px-3"><div>
@@ -4300,28 +4300,28 @@ original AES key:</p>
 <h2 id="final-words">Final Words</h2>
 <p>We hope this little exercise will make you feel like using our tools!</p>
 <p>The whitebox and all the scripts to convert the library and apply the attack are available online <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>
-and LIEF has its own website<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+and LIEF has its own website<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>Thanks to all Quarkslab colleagues who proofread this article and provided valuable feedback.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Side-Channel Marvels repository, on <a href="https://github.com/SideChannelMarvels">GitHub</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>SECCON2016 Online CTF-Binary / Crypto500 Obfuscated AES, archived <a href="https://github.com/SECCON/SECCON2016_online_CTF/tree/master/Binary/500_Obfuscated%20AES">here</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Sanghwan&rsquo;s Obfuscated AES Write-Up, in <a href="http://www.repo.kr/2016/12/seccon-2016-online-ctf-binarycrypto500_13.html">english</a>, <a href="http://www.repo.kr/2016/12/seccon-2016-online-ctf-binarycrypto500.html">korean</a> and <a href="http://www.repo.kr/2016/12/seccon-2016-online-ctf-binarycrypto500_30.html">japanese</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
-<p><a href="https://lief-project.github.io">Library to Instrument Executable Formats</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:4">
+<p><a href="https://lief-project.github.io">Library to Instrument Executable Formats</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>SECCON 2016 Obfuscated AES artifacts <a href="https://github.com/SideChannelMarvels/Deadpool/tree/master/wbs_aes_seccon2016">in Deadpool</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/18-05-when-sidechannelmarvels-meets-lief/featured.png"/></item><item><title>How to use frida on a non-rooted device</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/how-to-use-frida-on-a-non-rooted-device/</link><pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/how-to-use-frida-on-a-non-rooted-device/</guid><description>This post explains how to use Frida gadget on a non-rooted device.</description><content:encoded><![CDATA[<p>This post is a part of the LIEF tutorials. It explains how to combine <a href="https://www.frida.re/">Frida</a> and <a href="https://lief-project.github.io/">LIEF</a> to
 run <code>frida-gadget</code> on a non rooted device.</p>
 <p><a href="https://lief-project.github.io/doc/latest/tutorials/09_frida_lief.html">See more</a></p>
@@ -4821,29 +4821,29 @@ Once C++ API is stable we plan to provide full APIs for Python, C, Java, OCaml<s
 <p>Next version should be focused on the Mach-O builder especially for adding sections and segments.
 We also plan to support PE <code>.NET</code> headers and fix some performances issues.</p>
 <p>For questions you can join the <a href="https://gitter.im/lief-project">Gitter channel</a>.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>All Python examples are done with the 3.5 version&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>As mentioned in the Fortinet blog post, the library is packed.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>See the blog post about O-LLVM analysis: <a href="https://blog.quarkslab.com/deobfuscation-recovering-an-ollvm-protected-program.html">https://blog.quarkslab.com/deobfuscation-recovering-an-ollvm-protected-program.html</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>This feature is not yet available for MachO objects&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>Due to the inheritance relationship and abstraction these attributes are located in the MachO::Relocation and LIEF::Relocation objects.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p><a href="https://github.com/aziem/LIEF-ocaml">https://github.com/aziem/LIEF-ocaml</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/17-11-have-fun-with-lief-and-executable-formats/featured.png"/></item><item><title>Open-sourcing LIEF</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/lief-release/</link><pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/lief-release/</guid><description>We are open-sourcing LIEF, a library to parse and manipulate ELF, PE and Mach-O binary formats. This blog post explains the purpose of this project and some parts of its architecture.</description><content:encoded><![CDATA[<div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4">
   <div class="p-4 rounded col-12 alert alert-info" style="background-color: #FAFCFF">
     <div class="d-flex px-3"><div>
