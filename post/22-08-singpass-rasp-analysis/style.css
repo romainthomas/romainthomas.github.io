@@ -1,0 +1,184 @@
+code {
+  color: #171f38 !important;
+}
+
+figcaption {
+  font-style: italic;
+  color: #082361;
+}
+
+.dark-boxed {
+  font-family: "Fira Code";
+  font-weight: 400;
+  padding: 1px 8px 1px 8px;
+  background-color: #2d2d2d !important;
+  border-radius: 4px;
+}
+
+.red-box {
+  color: #CC0000 !important;
+}
+
+.main-bg {
+  font-family: "Fira Code";
+  font-weight: 450;
+  background-color: #F1F1F1 !important;
+  border: 2px solid #353333;
+  color: #353333;
+}
+
+.fcode {
+  font-family: "Fira Code";
+  font-weight: 400;
+}
+
+.dark-orange {
+  fill: #CC7A00 !important;
+  color: #CC7A00 !important;
+}
+
+.dark-purple {
+  fill: #C364FC !important;
+  color: #C364FC !important;
+}
+
+.dark-yellow {
+  fill: #FDD418 !important;
+  color: #FDD418 !important;
+}
+
+.dark-gray {
+  fill: #ababab !important;
+  color: #ababab !important;
+}
+
+.dark-blue {
+  fill: #5C92EA !important;
+  color: #70a3f5 !important;
+}
+
+.dark-red {
+  fill: #FF0000 !important;
+  color: #FF0000 !important;
+}
+
+.dark-light-blue {
+  fill: #D1F0FC !important;
+  color: #D1F0FC !important;
+}
+
+.dark-clear-blue {
+  fill: #6dcff6 !important;
+  color: #6dcff6 !important;
+}
+
+/*
+ * Color theme for IDA like code
+ */
+.hlr {
+    fill: #ababab;
+    color: #ababab;
+    font-weight: 450;
+    font-family: "Fira Code";
+}
+
+.hlr-name-section {
+    fill: #5C92EA;
+    color: #5C92EA;
+}
+
+.hlr-name-variable {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.hlr-name-unknownvariable {
+    fill: #aaff00;
+    color: #aaff00;
+}
+
+.hlr-name-instruction {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.hlr-name-register {
+    fill: #D1F0FC;
+    color: #D1F0FC;
+}
+
+.hlr-name-label {
+    fill: #FDD418;
+    color: #FDD418;
+}
+
+.hlr-name-function {
+    fill: #FDD418;
+    color: #FDD418;
+}
+
+.hlr-name-localvariable {
+    fill: #ff8000;
+    color: #ff8000;
+}
+
+.hlr-name-read {
+    fill: #00CC00;
+    color: #00CC00;
+}
+
+.hlr-name-write {
+    fill: #ED1C24;
+    color: #ED1C24;
+}
+
+.hlr-literal-number-address {
+    fill: #5C92EA;
+    color: #5C92EA;
+}
+
+.hlr-literal-number-hex {
+    fill: #6DCFF6;
+    color: #6DCFF6;
+}
+
+.hlr-literal-number-integer {
+    fill: #6DCFF6;
+    color: #6DCFF6;
+}
+
+.hlr-keyword-type {
+    fill: #ababab;
+    color: #ababab;
+}
+
+.hlr-literal-string {
+    fill: #59eb42;
+    color: #59eb42;
+}
+
+.hlr-comment {
+    fill: #C364FC;
+    color: #C364FC;
+}
+
+.hlr-comment-preproc {
+    fill: #ababab;
+    color: #ababab;
+}
+
+.hlr-comment-special {
+    fill: #CC7A00;
+    color: #CC7A00;
+}
+
+.hlr-comment-special-red {
+    fill: #ED1C24;
+    color: #ED1C24;
+}
+
+.hlr-name-special {
+    fill: #C364FC;
+    color: #C364FC;
+}
+
