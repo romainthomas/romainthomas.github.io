@@ -689,13 +689,7 @@ for protecting these applications is and remains a good choice to protect assets
 </li>
 </ol>
 </div>
-]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/22-09-ios-obfuscation-syscall-hooking/featured.png"/></item><item><title>Part 1 – SingPass RASP Analysis</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/22-08-singpass-rasp-analysis/</link><pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/22-08-singpass-rasp-analysis/</guid><description>This first blog post introduces the RASP checks used in SingPass</description><content:encoded><![CDATA[<div class="alert alert-info" role="alert" style="border: none !important; background-color: #f9f9f9; color: #4d4d4d;">
-  <span class="fas fa-clock-rotate-left" style="color: #4d4d4d" >&#160;</span>
-  This is an <strong>ephemeral</strong> blog post. If you want to keep access to this content,
-you can download the archive which contains the blog post and the assets here: <a href="http://dl.romainthomas.fr">http://dl.romainthomas.fr</a> or
-<a href="/post/22-08-singpass-rasp-analysis/ios-rasp-blog-post.zip" alt="ios-rasp-blog-post.zip" target="_blank">ios-rasp-blog-post.zip</a>
-</div>
-<h2 id="introduction">Introduction</h2>
+]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/22-09-ios-obfuscation-syscall-hooking/featured.png"/></item><item><title>Part 1 – SingPass RASP Analysis</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/22-08-singpass-rasp-analysis/</link><pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/22-08-singpass-rasp-analysis/</guid><description>This first blog post introduces the RASP checks used in SingPass</description><content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>I started to dig into the <a href="https://apps.apple.com/sg/app/singpass/id1340660807">SingPass</a> application
 which turned out to be obfuscated and protected with Runtime Application Self-Protection (RASP).</p>
 <p>Retrospectively, this application is pretty interesting to analyze RASP functionalities since:</p>
