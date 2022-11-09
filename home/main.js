@@ -30,6 +30,13 @@ anime({
   delay: 150,
 });
 anime({
+  targets: '#mastodon',
+  opacity: [0, 1],
+  easing: "easeInOutExpo",
+  duration: 1000,
+  delay: 170,
+});
+anime({
   targets: '#linkedin',
   opacity: [0, 1],
   easing: "easeInOutExpo",
