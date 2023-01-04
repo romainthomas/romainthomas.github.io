@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:content="http://purl.org/rss/1.0/modules/content" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Blog Post | Romain Thomas</title><link>https://www.romainthomas.fr/post/</link><atom:link href="https://www.romainthomas.fr/post/index.xml" rel="self" type="application/rss+xml"/><description>Lastest blog post</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate><item><title>Open-Obfuscator: A free and open-source obfuscator for mobile applications</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/22-10-open-obfuscator/</link><pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/22-10-open-obfuscator/</guid><description>This blog post introduces open-obfuscator, a new open-source project to obfuscate mobile applications.</description><content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1" xmlns:content="http://purl.org/rss/1.0/modules/content" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Blog Post | Romain Thomas</title><link>https://www.romainthomas.fr/post/</link><atom:link href="https://www.romainthomas.fr/post/index.xml" rel="self" type="application/rss+xml"/><description>Lastest blog post</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate><item><title>iCDump: A Modern Objective-C Class Dump</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/23-01-icdump/</link><pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/23-01-icdump/</guid><description>This blog post introduces iCDump, an new Objective-C class dump based on LLVM</description><content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>iCDump is a tool to access and process Objective-C metadata located in 64-bits Mach-O binaries.
+It uses LIEF to load the raw Objective-C data and LLVM to output the reconstructed Objective-C structures.
+The <em>LLVM output</em> was inspired by <a href="https://github.com/lifting-bits/rellic">rellic</a> developed by Trail of Bits.</p>
+<p>The project is available on GitHub: <a href="https://github.com/romainthomas/iCDump">romainthomas/iCDump</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>Python wheels for Linux and OSX are available on PyPI such as one can install iCDump through:</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip install <span style="color:#666">[</span>--user<span style="color:#666">]</span> icdump
+</span></span></code></pre></div><p>Once installed, you can run <a href="https://github.com/romainthomas/iCDump/blob/main/bindings/python/tools/readobjc.py">readobjc.py</a>
+to quickly extract Objective-C structures from a Mach-O binary:</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ readobjc.py ./RNCryptor.bin
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@protocol</span> <span style="color:#00f;font-weight:bold">__ARCLiteKeyedSubscripting__</span>
+</span></span><span style="display:flex;"><span>- (NSObject <span style="color:#666">*</span>)<span style="color:#00f">objectForKeyedSubscript:</span>(NSObject <span style="color:#666">*</span>)<span style="color:#19177c">self</span> <span style="color:#666">:</span>(<span style="color:#b00040">SEL</span>)<span style="color:#b00040">id</span> <span style="color:#666">:</span>(NSObject <span style="color:#666">*</span>)arg2;
+</span></span><span style="display:flex;"><span>- (<span style="color:#b00040">void</span>)<span style="color:#00f">setObject:</span>(NSObject <span style="color:#666">*</span>)<span style="color:#19177c">self</span> <span style="color:#00f">forKeyedSubscript:</span>(<span style="color:#b00040">SEL</span>)<span style="color:#19177c">id</span> <span style="color:#666">:</span>(NSObject <span style="color:#666">*</span>)<span style="color:#a0a000">arg2</span> :(NSObject <span style="color:#666">*</span>)arg3;
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@end</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@interface</span> <span style="color:#00f;font-weight:bold">PodsDummy_RNCryptor_iOS</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@end</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@interface</span> <span style="color:#00f;font-weight:bold">RNCryptor</span>.RNCryptor.Encryptor{
+</span></span><span style="display:flex;"><span>    NSObject <span style="color:#666">*</span> encryptor;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@end</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@interface</span> <span style="color:#00f;font-weight:bold">RNCryptor</span>.RNCryptor.Decryptor{
+</span></span><span style="display:flex;"><span>    NSObject <span style="color:#666">*</span> decryptors;
+</span></span><span style="display:flex;"><span>    NSObject <span style="color:#666">*</span> buffer;
+</span></span><span style="display:flex;"><span>    NSObject <span style="color:#666">*</span> decryptor;
+</span></span><span style="display:flex;"><span>    NSObject <span style="color:#666">*</span> password;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">@end</span>
+</span></span></code></pre></div><p>Using the Python API, we can output these header-like structures as follows:</p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">icdump</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>metadata <span style="color:#666">=</span> icdump<span style="color:#666">.</span>objc<span style="color:#666">.</span>parse(<span style="color:#ba2121">&#34;./RNCryptor.bin&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">print</span>(metadata<span style="color:#666">.</span>to_decl())
+</span></span></code></pre></div><h2 id="limitations">Limitations</h2>
+<p>In its current form, iCDump can only process Objective-C metadata but the Swift structures also aim at being
+supported by iCDump. I started a PoC for this part but it&rsquo;s far from being ready to be merged.</p>
+<p>The second limitation is Windows. Theoretically, iCDump and its Python bindings, could be compiled for Windows but to
+be honest, for this release I was lazy to setup the CI pipeline with LLVM for Windows. Nevertheless,
+Windows users should be able to play with iCDump thanks to WSL.</p>
+<p>The API documentation needs to be written and generated with Sphinx but in the meanwhile, you can directly have
+a look at the <a href="https://github.com/romainthomas/iCDump/blob/main/bindings/python/src/ObjC/init.cpp">Python binding</a>
+which synthesis the important functions.</p>
+]]></content:encoded><media:content medium="image" width="918" height="517" url="https://www.romainthomas.fr/post/23-01-icdump/featured.webp"/></item><item><title>Open-Obfuscator: A free and open-source obfuscator for mobile applications</title><dc:creator>Romain Thomas</dc:creator><link>https://www.romainthomas.fr/post/22-10-open-obfuscator/</link><pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate><guid>https://www.romainthomas.fr/post/22-10-open-obfuscator/</guid><description>This blog post introduces open-obfuscator, a new open-source project to obfuscate mobile applications.</description><content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>This post is about a new project on which I (intensively) worked this month. It aims at providing a free and
 open-source solution for obfuscating mobile applications.</p>
 <div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4">
