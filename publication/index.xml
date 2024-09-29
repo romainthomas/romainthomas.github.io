@@ -1,3 +1,239 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications on Romain Thomas</title><link>https://www.romainthomas.fr/publication/</link><description>Recent content in Publications on Romain Thomas</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>me@romainthomas.fr (Romain Thomas)</managingEditor><webMaster>me@romainthomas.fr (Romain Thomas)</webMaster><atom:link href="https://www.romainthomas.fr/publication/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poor Man's Obfuscator</title><link>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</guid><description>Slides Whitepaper Video (English) Assets https://github.com/romainthomas/the-poor-mans-obfuscator</description></item><item><title>DroidGuard: A Deep Dive into SafetyNet</title><link>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</link><pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</guid><description>Slides Whitepaper Talk at BlackHat (English) Talk at SSTIC (French) Assets https://github.com/romainthomas/droidguard-samples</description></item><item><title>PGSharp: Analysis of a Cheat Engine on Android</title><link>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</link><pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</guid><description>Slides Talk Blog Post PGSharp: Analysis of a Cheating App for PokemonGO</description></item><item><title>QBDL: QuarkslaB Dynamic Loader</title><link>https://www.romainthomas.fr/publication/21-sstic-qbdl/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/21-sstic-qbdl/</guid><description> Slides Talk (In French)</description></item><item><title>Dynamic Binary Instrumentation Techniques to Address Native Code Obfuscation</title><link>https://www.romainthomas.fr/publication/20-bh-asia-dbi/</link><pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/20-bh-asia-dbi/</guid><description>Slides Whitepaper Talk Demo #1: Snapchat Demo #2: Legu Packer Note: The videos are intentionally quick. Do not hesite to pause them.</description></item><item><title>Android Runtime Restrictions Bypass</title><link>https://www.romainthomas.fr/publication/android-restrictions-bypass/</link><pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/android-restrictions-bypass/</guid><description>Note This publication is also available on the Quarkslab Blog. With the release of Android Nougat, Google introduced restriction about native libraries that can be loaded from an Android application. Basically, it prevents developers to link against some internal libraries such as libart.so.
-Later on and with the release of Android Pie, they introduced a new restriction on the access to internal Java methods (or fields). Basically, these restrictions are used to prevent developers to access parts of the Android internal framework.</description></item><item><title>Static Instrumentation Based on Executable Formats</title><link>https://www.romainthomas.fr/publication/static-instrumentation/</link><pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/static-instrumentation/</guid><description>Many instrumentation techniques are based on modifying code or system environment of the target. It can be suitable for scenarios but it could not work under certain circumstance (integrity checking, non-rooted environment…) In this talk we propose similar techniques by only modifying the executable format. This enables to be architecture independent, injection and hooking does not require privileged environment.</description></item><item><title>LIEF: Library to Instrument Executable Formats</title><link>https://www.romainthomas.fr/publication/lief/</link><pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/lief/</guid><description>When analyzing executable, the first layer of information is the format in which the executable is wrapped. It turns out that a lot of tools and libraries exist to analyze and instrument machine code wrapped by the format, but there is not such library to handle the three mainstream executable formats and to both read and modify these formats. LIEF has been developed to that end.
-In the talk we will explain the rationale behind LIEF architecture choices, what LIEF allows to do and have a look at use cases.</description></item><item><title>How Triton can help to reverse virtual machine based software protections</title><link>https://www.romainthomas.fr/publication/triton-vm-protection/</link><pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton-vm-protection/</guid><description> Slides Video</description></item><item><title>Dynamic Binary Analysis and Obfuscated Codes</title><link>https://www.romainthomas.fr/publication/dynamic-binary-analysis-and-obfuscation/</link><pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/dynamic-binary-analysis-and-obfuscation/</guid><description/></item><item><title>How Triton may help to analyse obfuscated binaries</title><link>https://www.romainthomas.fr/publication/triton/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications on Romain Thomas</title><link>https://www.romainthomas.fr/publication/</link><description>Recent content in Publications on Romain Thomas</description><generator>Hugo</generator><language>en-us</language><managingEditor>me@romainthomas.fr (Romain Thomas)</managingEditor><webMaster>me@romainthomas.fr (Romain Thomas)</webMaster><atom:link href="https://www.romainthomas.fr/publication/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poor Man's Obfuscator</title><link>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</guid><description>&lt;h2 id="hahahugoshortcode47s0hbhb-slides">
+ &lt;i class="fas fa-copy pr-1 fa-fw">&lt;/i> &lt;a href="slides.pdf">Slides&lt;/a>&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="slides.pdf" type="application/pdf" width="100%" height=450px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode47s2hbhb-whitepaper">
+ &lt;i class="fas fa-file-pdf pr-1 fa-fw">&lt;/i> &lt;a href="whitepaper.pdf">Whitepaper&lt;/a>&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="whitepaper.pdf" type="application/pdf" width="100%" height=1060px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode47s4hbhb-video-english">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Video (English)&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="https://1884242627.rsc.cdn77.org/passthesalt/r1263fff27edevq0oj41ih40jkmedo/media_1440_zKpK3tD2km.mp4" type="video/mp4">
+&lt;/video>
+
+&lt;h2 id="hahahugoshortcode47s6hbhb-assets">
+ &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> Assets&lt;/h2>
+&lt;p>&lt;a href="https://github.com/romainthomas/the-poor-mans-obfuscator">https://github.com/romainthomas/the-poor-mans-obfuscator&lt;/a>&lt;/p></description></item><item><title>DroidGuard: A Deep Dive into SafetyNet</title><link>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</link><pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</guid><description>&lt;h2 id="hahahugoshortcode48s0hbhb-slides">
+ &lt;i class="fas fa-copy pr-1 fa-fw">&lt;/i> &lt;a href="slides.pdf">Slides&lt;/a>&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="slides.pdf" type="application/pdf" width="100%" height=450px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode48s2hbhb-whitepaper">
+ &lt;i class="fas fa-file-pdf pr-1 fa-fw">&lt;/i> &lt;a href="whitepaper.pdf">Whitepaper&lt;/a>&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="whitepaper.pdf" type="application/pdf" width="100%" height=1060px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode48s4hbhb-talk-at-blackhat-english">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Talk at &lt;a href="https://www.blackhat.com/asia-22/briefings/schedule/#droidguard-a-deep-dive-into-safetynet-25835">BlackHat&lt;/a> (English)&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zcFg0ZJ2E_A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="hahahugoshortcode48s6hbhb-talk-at-sstic-french">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Talk at &lt;a href="https://www.sstic.org/2022/presentation/droidguard_a_deep_dive_into_safetynet/">SSTIC&lt;/a> (French)&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="https://static.sstic.org/videos2022/1080p/droidguard_a_deep_dive_into_safetynet.mp4" type="video/mp4">
+&lt;/video>
+
+&lt;h2 id="hahahugoshortcode48s8hbhb-assets">
+ &lt;i class="fab fa-github pr-1 fa-fw">&lt;/i> Assets&lt;/h2>
+&lt;p>&lt;a href="https://github.com/romainthomas/droidguard-samples">https://github.com/romainthomas/droidguard-samples&lt;/a>&lt;/p></description></item><item><title>PGSharp: Analysis of a Cheat Engine on Android</title><link>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</link><pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</guid><description>&lt;h2 id="hahahugoshortcode45s0hbhb-slides">
+ &lt;i class="fas fa-copy pr-1 fa-fw">&lt;/i> Slides&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="21-10-ekoparty-mobile-hacking-space-pgsharp.pdf" type="application/pdf" width="100%" height=450px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode45s2hbhb-talk">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Talk&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gcMQgjgajPk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;p>&lt;br />&lt;br />&lt;/p>
+&lt;h2 id="hahahugoshortcode45s4hbhb-blog-post">
+ &lt;i class="fas fa-newspaper pr-1 fa-fw">&lt;/i> Blog Post&lt;/h2>
+&lt;p>&lt;a href="https://www.romainthomas.fr/post/21-11-pgsharp-analysis/">&lt;em>PGSharp: Analysis of a Cheating App for PokemonGO&lt;/em>&lt;/a>&lt;/p></description></item><item><title>QBDL: QuarkslaB Dynamic Loader</title><link>https://www.romainthomas.fr/publication/21-sstic-qbdl/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/21-sstic-qbdl/</guid><description>&lt;h2 id="hahahugoshortcode46s0hbhb-slides">
+ &lt;i class="fas fa-copy pr-1 fa-fw">&lt;/i> Slides&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="SSTIC2021-Slides-qbdl_quarkslab_dynamic_loader-guinet_thomas.pdf" type="application/pdf" width="100%" height=450px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode46s2hbhb-talk-in-french">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Talk (In French)&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="https://static.sstic.org/videos2021/1080p/qbdl_quarkslab_dynamic_loader.mp4" type="video/mp4">
+&lt;/video></description></item><item><title>Dynamic Binary Instrumentation Techniques to Address Native Code Obfuscation</title><link>https://www.romainthomas.fr/publication/20-bh-asia-dbi/</link><pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/20-bh-asia-dbi/</guid><description>&lt;h2 id="hahahugoshortcode44s0hbhb-slides">
+ &lt;i class="fas fa-copy pr-1 fa-fw">&lt;/i> Slides&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="asia-20-Thomas-Dynamic-Binary-Instrumentation-Techniques-to-Address-Native-Code-Obfuscation.pdf" type="application/pdf" width="100%" height=450px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode44s2hbhb-whitepaper">
+ &lt;i class="fas fa-file-pdf pr-1 fa-fw">&lt;/i> Whitepaper&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="asia-20-Thomas-Dynamic-Binary-Instrumentation-Techniques-to-Address-Native-Code-Obfuscation-wp.pdf" type="application/pdf" width="100%" height=1060px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode44s4hbhb-talk">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Talk&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MRku-2fW42w?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;div id="demo1">&lt;/div>
+&lt;h2 id="hahahugoshortcode44s6hbhb-demo-1-snapchat">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Demo #1: Snapchat&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="snapchat_demo.mp4" type="video/mp4">
+&lt;/video>
+
+&lt;div id="demo2">&lt;/div>
+&lt;h2 id="hahahugoshortcode44s8hbhb-demo-2-legu-packer">
+ &lt;i class="fas fa-laptop-code pr-1 fa-fw">&lt;/i> Demo #2: Legu Packer&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="qbdi-tencent-packer.mp4" type="video/mp4">
+&lt;/video>
+
+&lt;p>&lt;em>Note: The videos are intentionally quick. Do not hesite to pause them.&lt;/em>&lt;/p></description></item><item><title>Android Runtime Restrictions Bypass</title><link>https://www.romainthomas.fr/publication/android-restrictions-bypass/</link><pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/android-restrictions-bypass/</guid><description>&lt;div class="col-12 col-md-12 mb-4 mb-lg-4 mt-4">
+ &lt;div class="p-4 rounded col-12 alert alert-info" style="border: none !important; background-color: #FAFCFF">
+ &lt;div class="d-flex px-3">&lt;div>
+ &lt;div class="icon icon-sm icon-secondary">
+ &lt;span class="fas fa-circle-info" style="color: #084298" >&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="ps-4" style="color: #084298">
+ &lt;h3 class="h5 m-0 mb-1" style="color: #084298">Note&lt;/h3>
+ This publication is also available on the &lt;a href="https://blog.quarkslab.com/android-runtime-restrictions-bypass.html">Quarkslab Blog&lt;/a>.
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;p>With the release of Android Nougat, Google introduced restriction about native libraries that can be loaded from an Android application. Basically, it prevents developers to link against some internal libraries such as &lt;code>libart.so&lt;/code>.&lt;/p>
+&lt;p>Later on and with the release of Android Pie, they introduced a new restriction on the access to internal Java methods (or fields). Basically, these restrictions are used to prevent developers to access parts of the Android internal framework.&lt;/p></description></item><item><title>Static Instrumentation Based on Executable Formats</title><link>https://www.romainthomas.fr/publication/static-instrumentation/</link><pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/static-instrumentation/</guid><description>&lt;p>Many instrumentation techniques are based on modifying code or system environment of the target. It can be suitable for scenarios but it could not work under certain circumstance (integrity checking, non-rooted environment…) In this talk we propose similar techniques by only modifying the executable format. This enables to be architecture independent, injection and hooking does not require privileged environment.&lt;/p>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="18-06-Recon18-Formats-Instrumentation.pdf" type="application/pdf" width="100%" height=600px />
+&lt;/div></description></item><item><title>LIEF: Library to Instrument Executable Formats</title><link>https://www.romainthomas.fr/publication/lief/</link><pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/lief/</guid><description>&lt;p>When analyzing executable, the first layer of information is the format in which the executable is wrapped. It turns out that a lot of tools and libraries exist to analyze and instrument machine code wrapped by the format, but there is not such library to handle the three mainstream executable formats and to both read and modify these formats. LIEF has been developed to that end.&lt;/p>
+&lt;p>In the talk we will explain the rationale behind LIEF architecture choices, what LIEF allows to do and have a look at use cases.&lt;/p></description></item><item><title>How Triton can help to reverse virtual machine based software protections</title><link>https://www.romainthomas.fr/publication/triton-vm-protection/</link><pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton-vm-protection/</guid><description>&lt;h2 id="hahahugoshortcode54s0hbhb-slides">
+ &lt;i class="fas fa-file-pdf pr-1 fa-fw">&lt;/i> Slides&lt;/h2>
+&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="csaw2016-sos-rthomas-jsalwan.pdf" type="application/pdf" width="100%" height=600px />
+&lt;/div>
+
+&lt;h2 id="hahahugoshortcode54s2hbhb-video">
+ &lt;i class="fas fa-file-video pr-1 fa-fw">&lt;/i> Video&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+&lt;video class="mb-4" controls >
+ &lt;source src="how-triton-can-help-to-reverse-virtual-machine-based-software-protections.mp4" type="video/mp4">
+&lt;/video></description></item><item><title>Dynamic Binary Analysis and Obfuscated Codes</title><link>https://www.romainthomas.fr/publication/dynamic-binary-analysis-and-obfuscation/</link><pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/dynamic-binary-analysis-and-obfuscation/</guid><description>&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="sthack2016-rthomas-jsalwan.pdf" type="application/pdf" width="100%" height=600px />
+&lt;/div></description></item><item><title>How Triton may help to analyse obfuscated binaries</title><link>https://www.romainthomas.fr/publication/triton/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton/</guid><description>&lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4">
+&lt;embed src="misc82-triton.pdf" type="application/pdf" width="100%" height=900px />
+&lt;/div></description></item></channel></rss>

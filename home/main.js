@@ -16,8 +16,14 @@ anime({
 });
 
 {{/* Twitter, Github */}}
+//anime({
+//  targets: '#twitter',
+//  opacity: [0, 1],
+//  easing: "easeInOutExpo",
+//  duration: 1000,
+//});
 anime({
-  targets: '#twitter',
+  targets: '#bluesky',
   opacity: [0, 1],
   easing: "easeInOutExpo",
   duration: 1000,
@@ -42,6 +48,13 @@ anime({
   easing: "easeInOutExpo",
   duration: 1000,
   delay: 350,
+});
+anime({
+  targets: '#discord',
+  opacity: [0, 1],
+  easing: "easeInOutExpo",
+  duration: 1000,
+  delay: 390,
 });
 anime({
   targets: '#cv',
