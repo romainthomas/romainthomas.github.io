@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.img-comparison-slider-div {
+    overflow-y: auto;
+}
+
+.slider-white {
+  --divider-color: #ffffff;
+  --default-handle-color: #ffffff;
+}
+
+.slider-white-1 {
+  --divider-color: #ffffff;
+  --default-handle-color: #ffffff;
+  --divider-width: 2px;
+}
+
+.slider-black {
+  --divider-color: #000000;
+  --default-handle-color: #000000;
+}
+
+.slider-blue {
+  --divider-width: 1px;
+  --divider-color: #3454e1;
+  --default-handle-color: #3454e1;
+}
