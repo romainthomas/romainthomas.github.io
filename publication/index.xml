@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications on Romain Thomas</title><link>https://www.romainthomas.fr/publication/</link><description>Recent content in Publications on Romain Thomas</description><generator>Hugo</generator><language>en-us</language><managingEditor>me@romainthomas.fr (Romain Thomas)</managingEditor><webMaster>me@romainthomas.fr (Romain Thomas)</webMaster><atom:link href="https://www.romainthomas.fr/publication/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poor Man's Obfuscator</title><link>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</guid><description>&lt;h2 id="hahahugoshortcode32s0hbhb-slides"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications on Romain Thomas</title><link>https://www.romainthomas.fr/publication/</link><description>Recent content in Publications on Romain Thomas</description><generator>Hugo</generator><language>en-us</language><managingEditor>me@romainthomas.fr (Romain Thomas)</managingEditor><webMaster>me@romainthomas.fr (Romain Thomas)</webMaster><atom:link href="https://www.romainthomas.fr/publication/index.xml" rel="self" type="application/rss+xml"/><item><title>The Poor Man's Obfuscator</title><link>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</link><pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/</guid><description>&lt;h2 id="hahahugoshortcode34s0hbhb-slides"&gt;
  &lt;i class="fas fa-copy pr-1 fa-fw"&gt;&lt;/i&gt; &lt;a href="slides.pdf"&gt;Slides&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="slides.pdf" type="application/pdf" width="100%" height=450px /&gt;
 &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode32s2hbhb-whitepaper"&gt;
+&lt;h2 id="hahahugoshortcode34s2hbhb-whitepaper"&gt;
  &lt;i class="fas fa-file-pdf pr-1 fa-fw"&gt;&lt;/i&gt; &lt;a href="whitepaper.pdf"&gt;Whitepaper&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="whitepaper.pdf" type="application/pdf" width="100%" height=1060px /&gt;
 &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode32s4hbhb-video-english"&gt;
+&lt;h2 id="hahahugoshortcode34s4hbhb-video-english"&gt;
  &lt;i class="fas fa-laptop-code pr-1 fa-fw"&gt;&lt;/i&gt; Video (English)&lt;/h2&gt;
 
 
@@ -33,27 +33,27 @@
  &lt;source src="https://1884242627.rsc.cdn77.org/passthesalt/r1263fff27edevq0oj41ih40jkmedo/media_1440_zKpK3tD2km.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
 
-&lt;h2 id="hahahugoshortcode32s6hbhb-assets"&gt;
+&lt;h2 id="hahahugoshortcode34s6hbhb-assets"&gt;
  &lt;i class="fab fa-github pr-1 fa-fw"&gt;&lt;/i&gt; Assets&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://github.com/romainthomas/the-poor-mans-obfuscator"&gt;https://github.com/romainthomas/the-poor-mans-obfuscator&lt;/a&gt;&lt;/p&gt;</description></item><item><title>DroidGuard: A Deep Dive into SafetyNet</title><link>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</link><pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</guid><description>&lt;h2 id="hahahugoshortcode35s0hbhb-slides"&gt;
+&lt;p&gt;&lt;a href="https://github.com/romainthomas/the-poor-mans-obfuscator"&gt;https://github.com/romainthomas/the-poor-mans-obfuscator&lt;/a&gt;&lt;/p&gt;</description></item><item><title>DroidGuard: A Deep Dive into SafetyNet</title><link>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</link><pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/</guid><description>&lt;h2 id="hahahugoshortcode38s0hbhb-slides"&gt;
  &lt;i class="fas fa-copy pr-1 fa-fw"&gt;&lt;/i&gt; &lt;a href="slides.pdf"&gt;Slides&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="slides.pdf" type="application/pdf" width="100%" height=450px /&gt;
 &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode35s2hbhb-whitepaper"&gt;
+&lt;h2 id="hahahugoshortcode38s2hbhb-whitepaper"&gt;
  &lt;i class="fas fa-file-pdf pr-1 fa-fw"&gt;&lt;/i&gt; &lt;a href="whitepaper.pdf"&gt;Whitepaper&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="whitepaper.pdf" type="application/pdf" width="100%" height=1060px /&gt;
 &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode35s4hbhb-talk-at-blackhat-english"&gt;
+&lt;h2 id="hahahugoshortcode38s4hbhb-talk-at-blackhat-english"&gt;
  &lt;i class="fas fa-laptop-code pr-1 fa-fw"&gt;&lt;/i&gt; Talk at &lt;a href="https://www.blackhat.com/asia-22/briefings/schedule/#droidguard-a-deep-dive-into-safetynet-25835"&gt;BlackHat&lt;/a&gt; (English)&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zcFg0ZJ2E_A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode35s6hbhb-talk-at-sstic-french"&gt;
+&lt;h2 id="hahahugoshortcode38s6hbhb-talk-at-sstic-french"&gt;
  &lt;i class="fas fa-laptop-code pr-1 fa-fw"&gt;&lt;/i&gt; Talk at &lt;a href="https://www.sstic.org/2022/presentation/droidguard_a_deep_dive_into_safetynet/"&gt;SSTIC&lt;/a&gt; (French)&lt;/h2&gt;
 
 
@@ -76,7 +76,7 @@
  &lt;source src="https://static.sstic.org/videos2022/1080p/droidguard_a_deep_dive_into_safetynet.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
 
-&lt;h2 id="hahahugoshortcode35s8hbhb-assets"&gt;
+&lt;h2 id="hahahugoshortcode38s8hbhb-assets"&gt;
  &lt;i class="fab fa-github pr-1 fa-fw"&gt;&lt;/i&gt; Assets&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/romainthomas/droidguard-samples"&gt;https://github.com/romainthomas/droidguard-samples&lt;/a&gt;&lt;/p&gt;</description></item><item><title>PGSharp: Analysis of a Cheat Engine on Android</title><link>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</link><pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/</guid><description>&lt;h2 id="hahahugoshortcode28s0hbhb-slides"&gt;
  &lt;i class="fas fa-copy pr-1 fa-fw"&gt;&lt;/i&gt; Slides&lt;/h2&gt;
@@ -205,13 +205,13 @@
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="18-06-Recon18-Formats-Instrumentation.pdf" type="application/pdf" width="100%" height=600px /&gt;
 &lt;/div&gt;</description></item><item><title>LIEF: Library to Instrument Executable Formats</title><link>https://www.romainthomas.fr/publication/lief/</link><pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/lief/</guid><description>&lt;p&gt;When analyzing executable, the first layer of information is the format in which the executable is wrapped. It turns out that a lot of tools and libraries exist to analyze and instrument machine code wrapped by the format, but there is not such library to handle the three mainstream executable formats and to both read and modify these formats. LIEF has been developed to that end.&lt;/p&gt;
-&lt;p&gt;In the talk we will explain the rationale behind LIEF architecture choices, what LIEF allows to do and have a look at use cases.&lt;/p&gt;</description></item><item><title>How Triton can help to reverse virtual machine based software protections</title><link>https://www.romainthomas.fr/publication/triton-vm-protection/</link><pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton-vm-protection/</guid><description>&lt;h2 id="hahahugoshortcode48s0hbhb-slides"&gt;
+&lt;p&gt;In the talk we will explain the rationale behind LIEF architecture choices, what LIEF allows to do and have a look at use cases.&lt;/p&gt;</description></item><item><title>How Triton can help to reverse virtual machine based software protections</title><link>https://www.romainthomas.fr/publication/triton-vm-protection/</link><pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate><author>me@romainthomas.fr (Romain Thomas)</author><guid>https://www.romainthomas.fr/publication/triton-vm-protection/</guid><description>&lt;h2 id="hahahugoshortcode51s0hbhb-slides"&gt;
  &lt;i class="fas fa-file-pdf pr-1 fa-fw"&gt;&lt;/i&gt; Slides&lt;/h2&gt;
 &lt;div class="pdfpreview shortcode shortcode--pdfpreview mb-4"&gt;
 &lt;embed src="csaw2016-sos-rthomas-jsalwan.pdf" type="application/pdf" width="100%" height=600px /&gt;
 &lt;/div&gt;
 
-&lt;h2 id="hahahugoshortcode48s2hbhb-video"&gt;
+&lt;h2 id="hahahugoshortcode51s2hbhb-video"&gt;
  &lt;i class="fas fa-file-video pr-1 fa-fw"&gt;&lt;/i&gt; Video&lt;/h2&gt;
 
 
