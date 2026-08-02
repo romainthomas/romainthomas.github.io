@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 750 1110" width="750" height="1110">
+    viewBox="0 0 750 1110" width="750" height="1110"><style>text,tspan{font-family:"JetBrains Mono",monospace!important;font-variant-ligatures:contextual common-ligatures;font-feature-settings:"calt" 1,"liga" 1}</style>
     <g font-family="JetBrains Mono" font-size="12px" font-weight="600">
-<image href="flashget-bg.webp" width="750" height="1110" />
     <text x="22" y="22"  xml:space="preserve"><tspan fill="#cba6f7">package</tspan><tspan>&#160;</tspan><tspan fill="#cdd6f4">com.flashget.kid.common.base</tspan><tspan fill="#9399b2">;</tspan><tspan fill="#cdd6f4"></tspan></text>
 <text x="22" y="39"   xml:space="preserve"><tspan fill="#cdd6f4"></tspan></text>
 <text x="22" y="56"   xml:space="preserve"><tspan fill="#cba6f7">import</tspan><tspan>&#160;</tspan><tspan fill="#cdd6f4">java.security.MessageDigest</tspan><tspan fill="#9399b2">;</tspan><tspan fill="#cdd6f4"></tspan></text>
@@ -71,4 +70,4 @@
 
     </g>
 </svg>
-        
+

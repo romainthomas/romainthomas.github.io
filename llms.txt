@@ -1,0 +1,70 @@
+# Romain Thomas
+
+> Software obfuscation, reverse engineering, program analysis, and open-source binary tooling by Romain Thomas.
+
+Romain Thomas is a security engineer whose original research covers software obfuscation, deobfuscation, reverse engineering, program analysis, mobile application protection, and open-source binary tooling. Content is written in English and includes reproducible technical articles, publications, project documentation, and training material.
+
+Canonical site: https://www.romainthomas.fr/
+
+## Machine-readable indexes
+
+- [XML sitemap](https://www.romainthomas.fr/sitemap.xml): Canonical crawlable URLs and modification dates.
+- [JSON content index](https://www.romainthomas.fr/index.json): Full text and metadata for published pages.
+- [Articles RSS feed](https://www.romainthomas.fr/post/index.xml): Recent long-form technical research.
+
+## Research articles
+- [A Glimpse Into DexProtector](https://www.romainthomas.fr/post/26-01-dexprotector/): This blog post provides a high-level overview of DexProtector's security features and their limitations
+- [Fuzzing Windows ARM64 closed-source binary ](https://www.romainthomas.fr/post/25-04-windows-arm64-qbdi-fuzzing/): This blog post introduces coverage-guided fuzzing with QBDI and libFuzzer targeting Windows ARM64.
+- [Instrumenting an Apple Vision Pro Library with QBDI](https://www.romainthomas.fr/post/24-09-apple-lockdown-dbi-lifting/): This blog post demonstrates how to extract liblockdown.dylib from the visionOS dyld shared cache to be instrumented with QBDI on an Apple M1.
+- [iCDump: A Modern Objective-C Class Dump](https://www.romainthomas.fr/post/23-01-icdump/): This blog post introduces iCDump, a new Objective-C class dump based on LLVM.
+- [Open-Obfuscator: A free and open-source obfuscator for mobile applications](https://www.romainthomas.fr/post/22-10-open-obfuscator/): This blog post introduces open-obfuscator, a new open-source project to obfuscate mobile applications.
+- [Part 2 – iOS Native Code Obfuscation and Syscall Hooking](https://www.romainthomas.fr/post/22-09-ios-obfuscation-syscall-hooking/): This second blog post deals with native code obfuscation and RASP syscall interception
+- [Part 1 – SingPass RASP Analysis](https://www.romainthomas.fr/post/22-08-singpass-rasp-analysis/): This first blog post introduces the RASP checks used in SingPass
+- [A Journey in iOS App Obfuscation](https://www.romainthomas.fr/post/22-08-ios-obfuscation/): This series of blog posts details how obfuscators can protect iOS applications from reverse engineering
+- [PGSharp: Analysis of a Cheating App for PokemonGO](https://www.romainthomas.fr/post/21-11-pgsharp-analysis/): This blog post is about the internal mechanisms of PGSharp, a cheat engine for PokemonGO.
+- [Gotta Catch 'Em All: Frida & jailbreak detection](https://www.romainthomas.fr/post/21-07-pokemongo-anti-frida-jailbreak-bypass/): This blog post analyzes the Frida and Jailbreak detection in PokemonGO for iOS.
+- [r2-pay: whitebox (part 2)](https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part2/): This second blog post explains how to recover the whitebox's key from the obfuscated library libnative-lib.so
+- [r2-pay: anti-debug, anti-root & anti-frida (part 1)](https://www.romainthomas.fr/post/20-09-r2con-obfuscated-whitebox-part1/): This first blog post describes the protections in the challenge r2-pay.
+- [A Glimpse Into Tencent's Legu Packer](https://www.romainthomas.fr/post/a-glimpse-into-tencents-legu-packer/): Analysis of Tencent Legu: a packer for Android applications.
+- [Android Native Library Analysis with QBDI](https://www.romainthomas.fr/post/android-native-library-analysis-with-qbdi/): This blog post deals with QBDI and how it can be used to reverse an Android JNI library
+- [Android crackme challenge](https://www.romainthomas.fr/post/android-crackme/): Android crackme that uses system's internals
+- [Android VDEX formats](https://www.romainthomas.fr/post/android-vdex/): Internal structures of VDEX format
+- [Android OAT formats](https://www.romainthomas.fr/post/android-oat/): Internal structures of OAT format
+- [When SideChannelMarvels meets LIEF](https://www.romainthomas.fr/post/18-05-when-sidechannelmarvels-meets-lief/): On how we used LIEF to lift an Android x86_64 library to Linux to perform our usual white-box attacks on it.
+- [How to use frida on a non-rooted device](https://www.romainthomas.fr/post/how-to-use-frida-on-a-non-rooted-device/): This post explains how to use Frida gadget on a non-rooted device.
+- [Have fun with LIEF and Executable Formats](https://www.romainthomas.fr/post/17-11-have-fun-with-lief-and-executable-formats/): This blog post introduces new features of LIEF as well as some uses cases.
+- [Open-sourcing LIEF](https://www.romainthomas.fr/post/lief-release/): We are open-sourcing LIEF, a library to parse and manipulate ELF, PE, and Mach-O binary formats. This blog post explains the purpose of this project and some parts of its …
+- [HITB 2015 Write-up - Crypto 400](https://www.romainthomas.fr/post/15-11-hitb2015-crypto400/): Write up
+- [HITB 2015 Write-up - Crypto 300](https://www.romainthomas.fr/post/15-11-hitb2015-crypto300/): Write-up for the Crypto 300 challenge
+- [Code coverage using a dynamic symbolic execution](https://www.romainthomas.fr/post/15-10-triton-code-coverage/): This blog post introduces code coverage with Triton
+
+## Publications
+- [The Poor Man's Obfuscator](https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/): The purpose of this publication is to present ELF and Mach-O transformations which impact or hinder disassemblers like IDA, BinaryNinja, Ghidra, and Radare2. Presented at Pass The Salt.
+- [DroidGuard: A Deep Dive into SafetyNet](https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/): SafetyNet is the Android component developed by Google to verify the devices' integrity. These checks are used by the developers to prevent running applications on devices that … Presented at SSTIC & BlackHat Asia.
+- [PGSharp: Analysis of a Cheat Engine on Android](https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/): PGSharp is a cheating app for PokemonGO that works on non-rooted devices. This talk introduces its functionalities and the protections used to prevent reverse-engineering. Presented at Ekoparty.
+- [QBDL: QuarksLab Dynamic Loader](https://www.romainthomas.fr/publication/21-sstic-qbdl/): The QuarkslaB Dynamic Loader (QBDL) is a modular, portable library for dynamically loading and linking binaries. Presented at SSTIC.
+- [Dynamic Binary Instrumentation Techniques to Address Native Code Obfuscation](https://www.romainthomas.fr/publication/20-bh-asia-dbi/): Android applications are becoming more and more obfuscated to prevent reverse engineering. While obfuscation can be applied on both, the Dalvik bytecode and the native code, the … Presented at BlackHat Asia.
+- [Android Runtime Restrictions Bypass](https://www.romainthomas.fr/publication/android-restrictions-bypass/): This paper explains how to disable runtime restrictions without root privileges
+- [Static Instrumentation Based on Executable Formats](https://www.romainthomas.fr/publication/static-instrumentation/): Talk given at Recon Montréal and PassTheSalt18 about static instrumentation and its use cases. Presented at Recon Montréal & PST.
+- [LIEF: Library to Instrument Executable Formats](https://www.romainthomas.fr/publication/lief/): When analyzing an executable, the first layer of information is the format in which the executable is wrapped. Many tools and libraries can analyze and instrument machine code … Presented at RMLL & Cybersecurity France-Japan.
+- [How Triton can help to reverse virtual machine based software protections](https://www.romainthomas.fr/publication/triton-vm-protection/): The first part of the talk is going to be an introduction to the Triton framework to expose its components and to explain how they work together. Then, the second part will include … Presented at CSAW SOS.
+- [Dynamic Binary Analysis and Obfuscated Codes](https://www.romainthomas.fr/publication/dynamic-binary-analysis-and-obfuscation/): This presentation explains how dynamic binary analysis (DBA) can help reverse engineers understand obfuscated code. We introduce basic obfuscation techniques and demonstrate how … Presented at St'Hack.
+- [How Triton may help analyze obfuscated binaries](https://www.romainthomas.fr/publication/triton/): Binary obfuscation protects software intellectual property by transforming a binary while preserving its semantics. It preserves the original information among irrelevant data to …
+
+## Open-source projects
+- [Symbi](https://www.romainthomas.fr/project/symbi/): A dynamic trace symbolizer built on DynaMIR.
+- [MCStone](https://www.romainthomas.fr/project/mcstone/): A clean, high-performance assembler and disassembler built on LLVM's MC layer for production reverse-engineering workloads.
+- [Lypid](https://www.romainthomas.fr/project/lypid/): A user-friendly library for inspecting and generating DWARF and PDB debug information.
+- [iCDump](https://www.romainthomas.fr/project/icdump/): A modern, cross-platform Objective-C class dump that reconstructs declarations from Mach-O metadata with LIEF and LLVM.
+- [Hooky](https://www.romainthomas.fr/project/hooky/): A modern C++ hooking framework for x86-64, ARM64, and RISC-V64, with cross-platform detours and function replacement.
+- [DynaMIR](https://www.romainthomas.fr/project/dynamir/): A modern dynamic binary instrumentation engine for x86-64, ARM64, and RISC-V64, built around a custom MLIR-based IR.
+- [CLayout](https://www.romainthomas.fr/project/clayout/): A Clang-powered analyzer for C and C++ layouts that resolves target-specific records, field offsets, sizes, methods, and types.
+- [BinLift](https://www.romainthomas.fr/project/binlift/): A user-friendly binary lifter built on QBDL, with DWARF-aware types and native or instrumented function calls.
+- [Open-Obfuscator](https://www.romainthomas.fr/project/open-obfuscator/): A free and open-source obfuscator for mobile applications
+- [QBDL](https://www.romainthomas.fr/project/qbdl/): QuarkslaB Dynamic Loader: Generic loader for ELF, PE, and Mach-O
+- [Tencent Legu Unpacker](https://www.romainthomas.fr/project/legu_unpacker/): Scripts to unpack Android applications protected by Tencent Legu
+- [Android Runtime Restrictions Bypass (PoC)](https://www.romainthomas.fr/project/android-runtime-restrictions-bypass/): Android application that disables Android restrictions without root privileges
+- [LIEF](https://www.romainthomas.fr/project/lief/): Parse, inspect, modify, and build ELF, PE, Mach-O, DEX, and more through one consistent C++, Python, Rust, Java, or C API.
+
+## Training
+- [Introduction to Reverse Engineering](https://www.romainthomas.fr/training/reverse-engineering-intro/): This workshop introduces the main concepts to get started in reverse engineering

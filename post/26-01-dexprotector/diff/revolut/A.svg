@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 966 668" width="966" height="668">
+    viewBox="0 0 966 668" width="966" height="668"><style>text,tspan{font-family:"JetBrains Mono",monospace!important;font-variant-ligatures:contextual common-ligatures;font-feature-settings:"calt" 1,"liga" 1}</style>
     <g font-family="JetBrains Mono" font-size="12px" font-weight="600">
-<image href="revolut-bg.webp" width="966" height="668" />
     <text x="22" y="22"  xml:space="preserve"><tspan fill="#cba6f7">package</tspan><tspan>&#160;</tspan><tspan fill="#cdd6f4">com.revolut</tspan><tspan fill="#9399b2">;</tspan><tspan fill="#cdd6f4"></tspan></text>
 <text x="22" y="39"   xml:space="preserve"><tspan fill="#cdd6f4"></tspan></text>
 <text x="22" y="56"   xml:space="preserve"><tspan fill="#cba6f7">public</tspan><tspan>&#160;</tspan><tspan fill="#cba6f7">final</tspan><tspan>&#160;</tspan><tspan fill="#cba6f7">class</tspan><tspan>&#160;</tspan><tspan fill="#f9e2af">BuildConfig</tspan><tspan>&#160;</tspan><tspan fill="#9399b2">{</tspan><tspan fill="#cdd6f4"></tspan></text>
@@ -45,4 +44,4 @@
 
     </g>
 </svg>
-        
+

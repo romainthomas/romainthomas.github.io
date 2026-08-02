@@ -2,13 +2,30 @@ code {
   color: #171f38 !important;
 }
 
+.singpass-splash .technical-diagram {
+  width: min(100%, 20rem);
+  margin: 1.5rem auto 2rem !important;
+}
+
+.singpass-data-slices .technical-diagram:first-of-type {
+  width: min(100%, 37rem);
+}
+
+.singpass-data-slices .technical-diagram:last-of-type {
+  width: min(100%, 45rem);
+}
+
+#fig-ixg-frida-stalker-condition .technical-diagram {
+  width: min(100%, 39rem);
+}
+
 figcaption {
   font-style: italic;
   color: #082361;
 }
 
 .dark-boxed {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 400;
   padding: 1px 8px 1px 8px;
   background-color: #2d2d2d !important;
@@ -20,7 +37,7 @@ figcaption {
 }
 
 .main-bg {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 450;
   background-color: #F1F1F1 !important;
   border: 2px solid #353333;
@@ -28,7 +45,7 @@ figcaption {
 }
 
 .fcode {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 400;
 }
 
@@ -79,7 +96,7 @@ figcaption {
     fill: #ababab;
     color: #ababab;
     font-weight: 450;
-    font-family: "Fira Code";
+    font-family: "JetBrains Mono";
 }
 
 .hlr-name-section {
@@ -181,4 +198,3 @@ figcaption {
     fill: #C364FC;
     color: #C364FC;
 }
-

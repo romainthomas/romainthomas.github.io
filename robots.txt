@@ -1,0 +1,5 @@
+# Public research content is available to search and AI retrieval crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.romainthomas.fr/sitemap.xml

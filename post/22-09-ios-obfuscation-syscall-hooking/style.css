@@ -8,7 +8,7 @@ figcaption {
 }
 
 .dark-boxed {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 400;
   padding: 1px 8px 1px 8px;
   background-color: #2d2d2d !important;
@@ -20,7 +20,7 @@ figcaption {
 }
 
 .main-bg {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 450;
   background-color: #F1F1F1 !important;
   border: 2px solid #353333;
@@ -28,7 +28,7 @@ figcaption {
 }
 
 .fcode {
-  font-family: "Fira Code";
+  font-family: "JetBrains Mono";
   font-weight: 400;
 }
 
@@ -79,7 +79,7 @@ figcaption {
     fill: #ababab;
     color: #ababab;
     font-weight: 450;
-    font-family: "Fira Code";
+    font-family: "JetBrains Mono";
 }
 
 .hlr-name-section {

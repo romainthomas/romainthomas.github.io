@@ -1,0 +1,1122 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 825 650" width="100%" height="100%"><style>@font-face{font-family:"JetBrains Mono";src:url("data:font/woff2;base64,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") format("woff2");font-display:block}text,tspan{font-family:"JetBrains Mono",monospace!important;font-variant-ligatures:contextual common-ligatures;font-feature-settings:"calt" 1,"liga" 1}.dark-orange{fill:#cc7a00!important}.dark-purple{fill:#c364fc!important}.dark-yellow{fill:#fdd418!important}.dark-gray,.hlr{fill:#ababab!important}.dark-blue,.hlr-name-section,.hlr-literal-number-address{fill:#70a3f5!important}.dark-red{fill:#ff5f70!important}.dark-light-blue{fill:#d1f0fc!important}.dark-clear-blue,.hlr-literal-number-hex,.hlr-literal-number-integer{fill:#6dcff6!important}.hlr-name-variable,.hlr-name-instruction{fill:#fff!important}.hlr-name-unknownvariable{fill:#aaff00!important}.hlr-name-register{fill:#d1f0fc!important}.hlr-name-label,.hlr-name-function{fill:#fdd418!important}.hlr-name-localvariable{fill:#ff9d3d!important}.hlr-name-read{fill:#36d36a!important}.hlr-name-write,.hlr-comment-special-red{fill:#ff5f70!important}.hlr-keyword-type,.hlr-comment-preproc{fill:#ababab!important}.hlr-literal-string{fill:#59eb42!important}.hlr-comment,.hlr-name-special{fill:#c364fc!important}.hlr-comment-special{fill:#e59a37!important}</style>
+	<g id="bottom">
+		<path d="M 223.5 583.98 L 753.15 583.98 C 754.806 583.98 756.15 585.324 756.15 586.98 L 756.15 617.5 C 756.15 619.156 754.806 620.5 753.15 620.5 L 223.5 620.5 C 221.844 620.5 220.5 619.156 220.5 617.5 L 220.5 586.98 C 220.5 585.324 221.844 583.98 223.5 583.98 Z" style="stroke:none;fill:#353333;stroke-miterlimit:10;"/>
+		<path d="M 223.5 583.98 L 753.15 583.98 C 754.806 583.98 756.15 585.324 756.15 586.98 L 756.15 617.5 C 756.15 619.156 754.806 620.5 753.15 620.5 L 223.5 620.5 C 221.844 620.5 220.5 619.156 220.5 617.5 L 220.5 586.98 C 220.5 585.324 221.844 583.98 223.5 583.98 Z" style="fill:none;stroke:#6DCFF6;stroke-width:3;stroke-linecap:square;stroke-miterlimit:2;"/>
+		<g clip-path="url(#_clipPath_7VMDlGUU7yiXWkH0bVMaNYBC3puTWVie)">
+			<text transform="matrix(1.029,0,0,1.029,228.989,606.32)" id="Text" class="hlr hlr-name-function" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">loc_not_jailbroken</text>
+		</g>
+		<defs>
+			<clipPath id="_clipPath_7VMDlGUU7yiXWkH0bVMaNYBC3puTWVie">
+				<rect x="0" y="0" width="146" height="16" transform="matrix(1.029,0,0,1.029,228.989,593.977)"/>
+			</clipPath>
+		</defs>
+	</g>
+	<g id="middle">
+		<path d="M 223.526 230.93 L 753.124 230.93 C 754.794 230.93 756.15 232.286 756.15 233.956 L 756.15 537.474 C 756.15 539.144 754.794 540.5 753.124 540.5 L 223.526 540.5 C 221.856 540.5 220.5 539.144 220.5 537.474 L 220.5 233.956 C 220.5 232.286 221.856 230.93 223.526 230.93 Z" style="stroke:none;fill:#353333;stroke-linecap:square;stroke-miterlimit:2;"/>
+		<path d="M 223.526 230.93 L 753.124 230.93 C 754.794 230.93 756.15 232.286 756.15 233.956 L 756.15 537.474 C 756.15 539.144 754.794 540.5 753.124 540.5 L 223.526 540.5 C 221.856 540.5 220.5 539.144 220.5 537.474 L 220.5 233.956 C 220.5 232.286 221.856 230.93 223.526 230.93 Z" style="fill:none;stroke:#6DCFF6;stroke-width:3;stroke-linecap:square;stroke-miterlimit:2;"/>
+		<g id="Group">
+			<g clip-path="url(#_clipPath_1bmmScqHYTjfBgTVPITqD1x7ZwKTpHvT)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,252.778)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_1bmmScqHYTjfBgTVPITqD1x7ZwKTpHvT">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,240.435)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_fqVP1PYCIlyMJp1fHvTYae895OE2KxG1)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,252.778)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X25</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_fqVP1PYCIlyMJp1fHvTYae895OE2KxG1">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,240.435)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_F4EDjqIp78ddk7lwAt4gJsktPfWjC3at)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,252.778)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_F4EDjqIp78ddk7lwAt4gJsktPfWjC3at">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,240.435)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_82Akm0Xd8jUl1PyzsCGoxuK5nKUPlbih)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,252.778)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_82Akm0Xd8jUl1PyzsCGoxuK5nKUPlbih">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,240.435)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_SNOETxAsFp03YGhXWWKW4or4enT9P36O)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,271.294)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_SNOETxAsFp03YGhXWWKW4or4enT9P36O">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,258.95)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_TkOCNyJj1chVGitytw9AF8yXOZPC7Y7S)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,271.294)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_TkOCNyJj1chVGitytw9AF8yXOZPC7Y7S">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,258.95)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_znt1OcnCQPgBWsIH7JQ8lmRFvF5PF1bR)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,271.294)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_znt1OcnCQPgBWsIH7JQ8lmRFvF5PF1bR">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,258.95)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_PFdMoBKyX8YbNMpcFHi4m8cRDoQXiY9I)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,271.294)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x13B76B477E382CB</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_PFdMoBKyX8YbNMpcFHi4m8cRDoQXiY9I">
+					<rect x="0" y="0" width="146" height="16" transform="matrix(1.029,0,0,1.029,391.905,258.95)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_DrahGokcPP92NoYVmv6colQ2ynL1Ewfe)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,289.809)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_DrahGokcPP92NoYVmv6colQ2ynL1Ewfe">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,277.465)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_xvohmC1oiM4wcN8p7HJlw1uUD5IS8HWj)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,289.809)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X9</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_xvohmC1oiM4wcN8p7HJlw1uUD5IS8HWj">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,277.465)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_26KNklqPBBeIo1iLDmq9VwngHS73Senb)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,289.809)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_26KNklqPBBeIo1iLDmq9VwngHS73Senb">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,277.465)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_BzmQZmxxvqT2cPNBJA3BDRD3jEJpS23V)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,289.809)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_BzmQZmxxvqT2cPNBJA3BDRD3jEJpS23V">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,391.905,277.465)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_80v5cc9ZxAv7NJUrPcmEW5H3tGVJQ7Kt)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,308.324)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SUB</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_80v5cc9ZxAv7NJUrPcmEW5H3tGVJQ7Kt">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_L2PEUry0DhNcfDP7kZY1TO1h8zdv11lF)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,308.324)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_L2PEUry0DhNcfDP7kZY1TO1h8zdv11lF">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_IuTKlRLHL3BlheHDbOzOY1ATejyGBKIp)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,308.324)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_IuTKlRLHL3BlheHDbOzOY1ATejyGBKIp">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_4FXcfFzfWq09RumUGrXFdw8N3pbWn0mM)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,308.324)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X9</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_4FXcfFzfWq09RumUGrXFdw8N3pbWn0mM">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_PfIJZOeOHo5lysCwsBdqSEOufE7qSKsL)">
+				<text transform="matrix(1.029,0,0,1.029,416.592,308.324)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_PfIJZOeOHo5lysCwsBdqSEOufE7qSKsL">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,416.592,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_spCa02x9ALliKNgnED2ubGnTFew05pQC)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,308.324)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_spCa02x9ALliKNgnED2ubGnTFew05pQC">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,433.05,295.98)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_WihP78hQU2gveyLHOQSbN5bXbKrIvamy)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,326.839)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_WihP78hQU2gveyLHOQSbN5bXbKrIvamy">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,314.496)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_M6sTVZuW7CeNjGra0ugRyGXSiYbkL9cj)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,326.839)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_M6sTVZuW7CeNjGra0ugRyGXSiYbkL9cj">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,314.496)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Gxk0zS3bNp266q72UNS9eh61MUr6bQcl)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,326.839)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Gxk0zS3bNp266q72UNS9eh61MUr6bQcl">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,314.496)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_9TnG5mxwUT7SjP5KryYXCZ6htDMkMJDS)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,326.839)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_9TnG5mxwUT7SjP5KryYXCZ6htDMkMJDS">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,391.905,314.496)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_tBeYVjInnI2Es2I2gHCo2jy7K6AsigFS)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,345.354)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_tBeYVjInnI2Es2I2gHCo2jy7K6AsigFS">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,333.011)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_nPHjOOeLXb0RwbxJiW1q0duvhXbdOhTp)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,345.354)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X11</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_nPHjOOeLXb0RwbxJiW1q0duvhXbdOhTp">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,333.011)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_JZicq9U045HxOeXji55YcsylFFAVMkf0)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,345.354)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_JZicq9U045HxOeXji55YcsylFFAVMkf0">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,333.011)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_z83jYVweSXvnHKr7ipAHs9krr946shBT)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,345.354)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_z83jYVweSXvnHKr7ipAHs9krr946shBT">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,333.011)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_dyHBfPTVLJFVc0zkZYQ6wKDatAXgxmTV)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,363.87)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SUB</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_dyHBfPTVLJFVc0zkZYQ6wKDatAXgxmTV">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_U5MWK6jaWbADnELib1u7yeHqmeG4ehxn)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,363.87)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X0</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_U5MWK6jaWbADnELib1u7yeHqmeG4ehxn">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_7dOo25NOIpp9xD6TaJJx4teZjMO76Ty6)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,363.87)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_7dOo25NOIpp9xD6TaJJx4teZjMO76Ty6">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_DOla3HCblTH3OvSzzyWqwJLP2BDwzzBO)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,363.87)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X11</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_DOla3HCblTH3OvSzzyWqwJLP2BDwzzBO">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,391.905,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_mBN2AwLBuAQ4pMc07DUqwUTSXuiZfNV3)">
+				<text transform="matrix(1.029,0,0,1.029,416.592,363.87)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_mBN2AwLBuAQ4pMc07DUqwUTSXuiZfNV3">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,416.592,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_7SQjjofPpxeX7toi8y0oykxcqMtmE59Q)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,363.87)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_7SQjjofPpxeX7toi8y0oykxcqMtmE59Q">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,433.05,351.526)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_5KsB1FCdJwoqGt9sNaPUKH8xY9jGQj3Y)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,382.385)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_5KsB1FCdJwoqGt9sNaPUKH8xY9jGQj3Y">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,370.041)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_FizeePH9OeBoEwvaA5BXbDsHJM7z6RdM)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,382.385)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_FizeePH9OeBoEwvaA5BXbDsHJM7z6RdM">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,370.041)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_63qR99CbtGBaZG9oYsXa9xCYiRl3GGbU)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,382.385)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_63qR99CbtGBaZG9oYsXa9xCYiRl3GGbU">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,370.041)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_p5eJs0vhfPTrf8iMKx7raNlZV3iV4eyu)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,382.385)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X0</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_p5eJs0vhfPTrf8iMKx7raNlZV3iV4eyu">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,391.905,370.041)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_jKooxaCFqfCjR3RMyUWVUCi2WXiJZhx8)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,400.9)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">STUR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_jKooxaCFqfCjR3RMyUWVUCi2WXiJZhx8">
+					<rect x="0" y="0" width="34" height="16" transform="matrix(1.029,0,0,1.029,227.325,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_wlkffjOkFaSiODiKObVEQjSq1rvRvSg9)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,400.9)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_wlkffjOkFaSiODiKObVEQjSq1rvRvSg9">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_gBgBxi7ehjC4OEXulz9mB5b8AW08SiyB)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,400.9)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_gBgBxi7ehjC4OEXulz9mB5b8AW08SiyB">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_AugG1Rz5G5tOCfEdjSkw36qbNH55d9Cp)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,400.9)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_AugG1Rz5G5tOCfEdjSkw36qbNH55d9Cp">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,400.134,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ME5zyjh3aODVNg2jdcUVfirsyPagVxEo)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,400.9)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X11</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ME5zyjh3aODVNg2jdcUVfirsyPagVxEo">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,408.363,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_QfZSVLlVzDz31jBPbynZdAedoPI0dSZE)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,400.9)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_QfZSVLlVzDz31jBPbynZdAedoPI0dSZE">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,433.05,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_4yGNkbwavXWwfIowtETjgrKLmG8nXsL0)">
+				<text transform="matrix(1.029,0,0,1.029,441.279,400.9)" id="Text" class="hlr hlr-literal-number-integer" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#-8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_4yGNkbwavXWwfIowtETjgrKLmG8nXsL0">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,441.279,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_6aC1ldBOq2BHb80uBN6ypYRUHjaNLudj)">
+				<text transform="matrix(1.029,0,0,1.029,465.966,400.9)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_6aC1ldBOq2BHb80uBN6ypYRUHjaNLudj">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,465.966,388.557)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_c4ta1MIDfIFVykZA8JVlemPhE3FH9xjQ)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,419.415)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_c4ta1MIDfIFVykZA8JVlemPhE3FH9xjQ">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,407.072)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_cugpLbcVF0RNRiMcAdgunWrzlriJ2Glr)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,419.415)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">W10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_cugpLbcVF0RNRiMcAdgunWrzlriJ2Glr">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,407.072)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_6eTABHgwLT0Rztp3Clf62pgE2Slb6Fut)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,419.415)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_6eTABHgwLT0Rztp3Clf62pgE2Slb6Fut">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,407.072)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ErJsWacOwHoqZRuDkSySdKGi6r2iA919)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,419.415)" id="Text" class="hlr hlr-comment-special" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#1</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ErJsWacOwHoqZRuDkSySdKGi6r2iA919">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,407.072)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_84zlqTgrtU2BGbohkEpavZFRTHatXfNt)">
+				<text transform="matrix(1.029,0,0,1.029,424.821,419.415)" id="Text" class="hlr hlr-comment-special" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">---&gt; EVT_ENV_JAILBREAK</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_84zlqTgrtU2BGbohkEpavZFRTHatXfNt">
+					<rect x="0" y="0" width="178" height="16" transform="matrix(1.029,0,0,1.029,424.821,407.072)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Qta5gLiJYbZz8uEXJ4WO8xEpDBP74Emd)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,437.931)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">STUR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Qta5gLiJYbZz8uEXJ4WO8xEpDBP74Emd">
+					<rect x="0" y="0" width="34" height="16" transform="matrix(1.029,0,0,1.029,227.325,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_5uVkSfJcJ4hJ5WbGpGcSDHQjsT7uz00W)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,437.931)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">W10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_5uVkSfJcJ4hJ5WbGpGcSDHQjsT7uz00W">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Q3OzgKni0rcwWNsnnO7UjRFgWJCuN1AU)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,437.931)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Q3OzgKni0rcwWNsnnO7UjRFgWJCuN1AU">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_sax4dqnKfJ0Gcg13PQrVUnhGZCqqnY7o)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,437.931)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_sax4dqnKfJ0Gcg13PQrVUnhGZCqqnY7o">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,400.134,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_iRdqkKV2kBNkWmaztxgzpYDnZxkS9Q8N)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,437.931)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X11</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_iRdqkKV2kBNkWmaztxgzpYDnZxkS9Q8N">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,408.363,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_pt4B2wbi3dWtOgBdQMHQ974y32wBmQe5)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,437.931)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_pt4B2wbi3dWtOgBdQMHQ974y32wBmQe5">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,433.05,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_59QS9MU1CePDl3buCdYl4ZRHUuFQJ8Zt)">
+				<text transform="matrix(1.029,0,0,1.029,441.279,437.931)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#-0x10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_59QS9MU1CePDl3buCdYl4ZRHUuFQJ8Zt">
+					<rect x="0" y="0" width="50" height="16" transform="matrix(1.029,0,0,1.029,441.279,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_fG7zbqQ04gsJVaQJG5M52vzsWac8eb9F)">
+				<text transform="matrix(1.029,0,0,1.029,490.653,437.931)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_fG7zbqQ04gsJVaQJG5M52vzsWac8eb9F">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,490.653,425.587)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_lrZfxcqf3JEoZPPtd0RQZn1R3sYXqyyh)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,456.446)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">STP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_lrZfxcqf3JEoZPPtd0RQZn1R3sYXqyyh">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_tYfBW1xZJturK5FTtn7PpDSdcjL4Y9Q6)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,456.446)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X24</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_tYfBW1xZJturK5FTtn7PpDSdcjL4Y9Q6">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_udGZ1EwEhuuXip8alxi6ciFa8hr1SWng)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,456.446)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_udGZ1EwEhuuXip8alxi6ciFa8hr1SWng">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_rm1kVQZciwR21y6BrCQk1HBXYuXG4bHS)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,456.446)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_rm1kVQZciwR21y6BrCQk1HBXYuXG4bHS">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_oIQLYSMieDSo0NHZZE8naduo7HPbCStc)">
+				<text transform="matrix(1.029,0,0,1.029,416.592,456.446)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_oIQLYSMieDSo0NHZZE8naduo7HPbCStc">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,416.592,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_nIlXpPCy54z4e5DfltsW5PZQSkq2gTbb)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,456.446)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_nIlXpPCy54z4e5DfltsW5PZQSkq2gTbb">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,433.05,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_sHfCbcod8DxvT6cjT2a4Hk1i5w9snb5U)">
+				<text transform="matrix(1.029,0,0,1.029,441.279,456.446)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X9</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_sHfCbcod8DxvT6cjT2a4Hk1i5w9snb5U">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,441.279,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_9NwL2wc3lM4fioVpsW65iFKTluPh2HSL)">
+				<text transform="matrix(1.029,0,0,1.029,457.737,456.446)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_9NwL2wc3lM4fioVpsW65iFKTluPh2HSL">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,457.737,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_eHcauw8j2ChhDihC3uU6RfvLHCYk31RC)">
+				<text transform="matrix(1.029,0,0,1.029,465.966,456.446)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#-0x10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_eHcauw8j2ChhDihC3uU6RfvLHCYk31RC">
+					<rect x="0" y="0" width="50" height="16" transform="matrix(1.029,0,0,1.029,465.966,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_PAenOHzqjeWVXYr1AhOw0pZ7tA6GQD2J)">
+				<text transform="matrix(1.029,0,0,1.029,515.34,456.446)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_PAenOHzqjeWVXYr1AhOw0pZ7tA6GQD2J">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,515.34,444.102)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_vgiA23LWwmBGI6LL5zJ0Vd7av2X6xI3R)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,474.961)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">ADRP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_vgiA23LWwmBGI6LL5zJ0Vd7av2X6xI3R">
+					<rect x="0" y="0" width="34" height="16" transform="matrix(1.029,0,0,1.029,227.325,462.618)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_0X2YW3Jx6aRvKtmix5P8vpKmQylkayPG)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,474.961)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_0X2YW3Jx6aRvKtmix5P8vpKmQylkayPG">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,462.618)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_0lGIYm21m3KCDoSpE8UB55TeQHGvT2K7)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,474.961)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_0lGIYm21m3KCDoSpE8UB55TeQHGvT2K7">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,462.618)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_9O0fHgV5pkxSv4vvm8tgTAo24agyiv87)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,474.961)" id="Text" class="hlr hlr-comment" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#EVT_ENV_JAILBREAK_cbk_ptr</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_9O0fHgV5pkxSv4vvm8tgTAo24agyiv87">
+					<rect x="0" y="0" width="210" height="16" transform="matrix(1.029,0,0,1.029,391.905,462.618)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_u8sBv9sLPI7yfwaq48icqSjk2Ddtse2k)">
+				<text transform="matrix(1.029,0,0,1.029,605.859,474.961)" id="Text" class="hlr hlr-comment-preproc" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">@PAGE</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_u8sBv9sLPI7yfwaq48icqSjk2Ddtse2k">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,605.859,462.618)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_IuKdzJOX4051PLG11JR9PveHCFHDW9jI)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,493.476)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">LDR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_IuKdzJOX4051PLG11JR9PveHCFHDW9jI">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_vWcKdhSgV8jXyjlR7bgr4d77bVsYig7W)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,493.476)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_vWcKdhSgV8jXyjlR7bgr4d77bVsYig7W">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_aA2VTL7OODpo9nqHJHddihAqGSK2ESSA)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,493.476)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_aA2VTL7OODpo9nqHJHddihAqGSK2ESSA">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_FpVUopud3YlkJ2yqISN6GWTiakTtstAZ)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,493.476)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_FpVUopud3YlkJ2yqISN6GWTiakTtstAZ">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,391.905,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_2o6juYJ9OTXIclDIXqpTFjiJ2duoqMVv)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,493.476)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_2o6juYJ9OTXIclDIXqpTFjiJ2duoqMVv">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,400.134,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_FpctNsrbeRlwCeIwbfbkREElReE36R5y)">
+				<text transform="matrix(1.029,0,0,1.029,416.592,493.476)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_FpctNsrbeRlwCeIwbfbkREElReE36R5y">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,416.592,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_tkLIgmG2pGfxYxOOh4bDHdIyOSmuxw9i)">
+				<text transform="matrix(1.029,0,0,1.029,424.821,493.476)" id="Text" class="hlr hlr-comment" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#EVT_ENV_JAILBREAK_cbk_ptr</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_tkLIgmG2pGfxYxOOh4bDHdIyOSmuxw9i">
+					<rect x="0" y="0" width="210" height="16" transform="matrix(1.029,0,0,1.029,424.821,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_7WONJxFhZ1pHIWbA6ZwbTGTeiLkuS4L5)">
+				<text transform="matrix(1.029,0,0,1.029,638.775,493.476)" id="Text" class="hlr hlr-comment-preproc" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">@PAGEOFF</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_7WONJxFhZ1pHIWbA6ZwbTGTeiLkuS4L5">
+					<rect x="0" y="0" width="66" height="16" transform="matrix(1.029,0,0,1.029,638.775,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_5g9p92pmfoVIpdL86zkTXhVishJzNy9u)">
+				<text transform="matrix(1.029,0,0,1.029,704.607,493.476)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_5g9p92pmfoVIpdL86zkTXhVishJzNy9u">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,704.607,481.133)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_9BuRxphWqQZKIQvcmTiPOvupvsqzXZRu)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,511.992)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">BLR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_9BuRxphWqQZKIQvcmTiPOvupvsqzXZRu">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,499.648)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_rdHNvJFN1pQ0Ttt6QxgMM9NqGMozLD3P)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,511.992)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_rdHNvJFN1pQ0Ttt6QxgMM9NqGMozLD3P">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,499.648)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_cs6xmeAgpvIQVaucXkJCizC6xiNwR3k2)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,511.992)" id="Text" class="hlr hlr-comment" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">On Jailbreak Detected</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_cs6xmeAgpvIQVaucXkJCizC6xiNwR3k2">
+					<rect x="0" y="0" width="170" height="16" transform="matrix(1.029,0,0,1.029,391.905,499.648)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_oJnue3RZOg05ScRf1kSf5aMDJiaCvJCT)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,530.507)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_oJnue3RZOg05ScRf1kSf5aMDJiaCvJCT">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,518.163)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_43ULiAZP7yE57Y06TdbWtp5yOlTrs03c)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,530.507)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_43ULiAZP7yE57Y06TdbWtp5yOlTrs03c">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,518.163)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_loXOfTR4rlP8RwdfqbBTnl5hfLuqVfK3)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,530.507)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_loXOfTR4rlP8RwdfqbBTnl5hfLuqVfK3">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,518.163)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Wqc8CqKHbSnNfIun4271lHIVNqRYmB9C)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,530.507)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X25</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Wqc8CqKHbSnNfIun4271lHIVNqRYmB9C">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,391.905,518.163)"/>
+				</clipPath>
+			</defs>
+		</g>
+	</g>
+	<g id="top">
+		<path d="M 224.213 22.67 L 752.437 22.67 C 754.486 22.67 756.15 24.334 756.15 26.383 L 756.15 186.787 C 756.15 188.836 754.486 190.5 752.437 190.5 L 224.213 190.5 C 222.164 190.5 220.5 188.836 220.5 186.787 L 220.5 26.383 C 220.5 24.334 222.164 22.67 224.213 22.67 Z" style="stroke:none;fill:#353333;stroke-linecap:square;stroke-miterlimit:2;"/>
+		<path d="M 224.213 22.67 L 752.437 22.67 C 754.486 22.67 756.15 24.334 756.15 26.383 L 756.15 186.787 C 756.15 188.836 754.486 190.5 752.437 190.5 L 224.213 190.5 C 222.164 190.5 220.5 188.836 220.5 186.787 L 220.5 26.383 C 220.5 24.334 222.164 22.67 224.213 22.67 Z" style="fill:none;stroke:#6DCFF6;stroke-width:3;stroke-linecap:square;stroke-miterlimit:2;"/>
+		<g id="Group">
+			<g clip-path="url(#_clipPath_JOl0BJrBiRvTqK5Ud25LoSYg6I3PhHum)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,46.714)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">STLR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_JOl0BJrBiRvTqK5Ud25LoSYg6I3PhHum">
+					<rect x="0" y="0" width="34" height="16" transform="matrix(1.029,0,0,1.029,227.325,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_uUYUVTKDnf1VYQj0DiahiVpxJgH3zttW)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,46.714)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">WZR</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_uUYUVTKDnf1VYQj0DiahiVpxJgH3zttW">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,358.989,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ib5MjS2AzxjYxED08SZe2SCorkNahVYv)">
+				<text transform="matrix(1.029,0,0,1.029,383.676,46.714)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ib5MjS2AzxjYxED08SZe2SCorkNahVYv">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,383.676,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_l397xuaiprCD7bEx7DXC6tChG8KWyLr4)">
+				<text transform="matrix(1.029,0,0,1.029,400.134,46.714)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_l397xuaiprCD7bEx7DXC6tChG8KWyLr4">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,400.134,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_CSOgKn1G83D598PN8mUymnX3Buw0gcY0)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,46.714)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_CSOgKn1G83D598PN8mUymnX3Buw0gcY0">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,408.363,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Ilqownjm30IUiU2vVpKXJhdQRJPUwpNm)">
+				<text transform="matrix(1.029,0,0,1.029,424.821,46.714)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Ilqownjm30IUiU2vVpKXJhdQRJPUwpNm">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,424.821,34.37)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_91VAmL0d1wGAa7cRoyYtqHAsxUBRHdI0)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,65.229)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_91VAmL0d1wGAa7cRoyYtqHAsxUBRHdI0">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,52.885)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_UHY7MVa4JA9BocdtfhhNowLdjmter7TM)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,65.229)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">W8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_UHY7MVa4JA9BocdtfhhNowLdjmter7TM">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,52.885)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_AsxIIojxMlZiFU5bOq3AA8UYYQX4sw6Y)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,65.229)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_AsxIIojxMlZiFU5bOq3AA8UYYQX4sw6Y">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,52.885)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_0golcmsZ1Lg0fx1dyEEzqd77sybNVF0J)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,65.229)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x16</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_0golcmsZ1Lg0fx1dyEEzqd77sybNVF0J">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,391.905,52.885)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_nTXvr7wVw7A8kiDg6zFqMkGKDG77e0za)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,83.744)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">STP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_nTXvr7wVw7A8kiDg6zFqMkGKDG77e0za">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_bGqgMJkcd7tpYQahtE4m2p081oHboWvN)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,83.744)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X9</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_bGqgMJkcd7tpYQahtE4m2p081oHboWvN">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_El8sXjjIeZhdCuA3glbbTekhskqVp2bS)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,83.744)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_El8sXjjIeZhdCuA3glbbTekhskqVp2bS">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_dW83AEYi6BMPmqeB1dkYTzlo0BsqusaH)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,83.744)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">X8</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_dW83AEYi6BMPmqeB1dkYTzlo0BsqusaH">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,391.905,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_eZwcHkrNSiPFlA0DbrKuAyNyxdP2rRZf)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,83.744)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_eZwcHkrNSiPFlA0DbrKuAyNyxdP2rRZf">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,408.363,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Ahy6qkxVNUYSmZrEulU9xHnkjw8jqTkS)">
+				<text transform="matrix(1.029,0,0,1.029,424.821,83.744)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">[</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Ahy6qkxVNUYSmZrEulU9xHnkjw8jqTkS">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,424.821,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ayelFUrNKOdlcuPaHjSjuMr5bwYwZiZq)">
+				<text transform="matrix(1.029,0,0,1.029,433.05,83.744)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ayelFUrNKOdlcuPaHjSjuMr5bwYwZiZq">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,433.05,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_P0jaz0pQg3xW6EUgblYF5YwDRNxeo0bc)">
+				<text transform="matrix(1.029,0,0,1.029,449.508,83.744)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_P0jaz0pQg3xW6EUgblYF5YwDRNxeo0bc">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,449.508,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_RIzQMfRgbGkU4HV1UvvfVdcpbY62TL0G)">
+				<text transform="matrix(1.029,0,0,1.029,457.737,83.744)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x50</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_RIzQMfRgbGkU4HV1UvvfVdcpbY62TL0G">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,457.737,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_5KjAmrj6imi28oFsYRcB4Lzmv8tMpFca)">
+				<text transform="matrix(1.029,0,0,1.029,498.882,83.744)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">+</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_5KjAmrj6imi28oFsYRcB4Lzmv8tMpFca">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,498.882,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_FlWXg1OoY295KuxSx8BzpIQZ8nEzPX0l)">
+				<text transform="matrix(1.029,0,0,1.029,507.111,83.744)" id="Text" class="hlr hlr-name-localvariable" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">var_60</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_FlWXg1OoY295KuxSx8BzpIQZ8nEzPX0l">
+					<rect x="0" y="0" width="50" height="16" transform="matrix(1.029,0,0,1.029,507.111,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_eEg9dXsyupOV5yxbfGtlpEPomx1aZ0ZT)">
+				<text transform="matrix(1.029,0,0,1.029,556.485,83.744)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">]</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_eEg9dXsyupOV5yxbfGtlpEPomx1aZ0ZT">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,556.485,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_RSr8Jp2pr1cWmNg8BeGeClhZrPngNFNF)">
+				<text transform="matrix(1.029,0,0,1.029,564.714,83.744)" id="Text" class="hlr hlr-error" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">!</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_RSr8Jp2pr1cWmNg8BeGeClhZrPngNFNF">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,564.714,71.401)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_tCOkL9bKpDqWjDFt40GDZBiUDeZIazVc)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,102.259)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">MOV</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_tCOkL9bKpDqWjDFt40GDZBiUDeZIazVc">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,89.916)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_jXVI3LcFY3zUG9zdfA47nI7iiEJ6ivd6)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,102.259)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">W0</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_jXVI3LcFY3zUG9zdfA47nI7iiEJ6ivd6">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,89.916)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_iF1pBwCEMM4z563PxJFgVBDK37xv6zZL)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,102.259)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_iF1pBwCEMM4z563PxJFgVBDK37xv6zZL">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,89.916)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_VXcdiinoo0voK4kn0ZXKw6ooCpLQ15ze)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,102.259)" id="Text" class="hlr hlr-comment-special-red" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#SYS_pathconf</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_VXcdiinoo0voK4kn0ZXKw6ooCpLQ15ze">
+					<rect x="0" y="0" width="106" height="16" transform="matrix(1.029,0,0,1.029,391.905,89.916)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_w0HCFmDc0x1jPjAicEIVqDI1yDJdyLbH)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,120.775)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">BL</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_w0HCFmDc0x1jPjAicEIVqDI1yDJdyLbH">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,227.325,108.431)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_wCjaLINH33F16dUeps1egJpK7UwIa2yk)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,120.775)" id="Text" class="hlr hlr-name-function" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">_syscall</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_wCjaLINH33F16dUeps1egJpK7UwIa2yk">
+					<rect x="0" y="0" width="66" height="16" transform="matrix(1.029,0,0,1.029,358.989,108.431)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_hoyZCxLQu1D44EzIQ3TUuHlP7RTNlrre)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,139.29)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">ADD</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_hoyZCxLQu1D44EzIQ3TUuHlP7RTNlrre">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Msc1iVU3tXYCFaWEQDUZErf7Ahi2aMth)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,139.29)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Msc1iVU3tXYCFaWEQDUZErf7Ahi2aMth">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_UkFUFVFqgcU8bnVxObFNee3X6YtprzB8)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,139.29)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_UkFUFVFqgcU8bnVxObFNee3X6YtprzB8">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_7WMV5E6Rov7B6s0U0ma842OK7ZRl7lua)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,139.29)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">SP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_7WMV5E6Rov7B6s0U0ma842OK7ZRl7lua">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,391.905,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_3uLC97BDgE5ExMCsF3Zf7VnwX6mt72NN)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,139.29)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_3uLC97BDgE5ExMCsF3Zf7VnwX6mt72NN">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,408.363,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_H52K9ox1Kkgrx8cTRqCzyNt3iQFSriZ0)">
+				<text transform="matrix(1.029,0,0,1.029,424.821,139.29)" id="Text" class="hlr hlr-literal-number-hex" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#0x10</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_H52K9ox1Kkgrx8cTRqCzyNt3iQFSriZ0">
+					<rect x="0" y="0" width="42" height="16" transform="matrix(1.029,0,0,1.029,424.821,126.946)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_1N3tH203sLz5CcwCQVnh4nFa6KsQBmFX)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,157.805)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">CMP</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_1N3tH203sLz5CcwCQVnh4nFa6KsQBmFX">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,227.325,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_vYwJuxk4A97u3Q0wgudLBfDwbhdciJxg)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,157.805)" id="Text" class="hlr hlr-name-register" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">W0</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_vYwJuxk4A97u3Q0wgudLBfDwbhdciJxg">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,358.989,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ZnJwLTV7Ig2KnQs7cBqmfc3buGsA5mEM)">
+				<text transform="matrix(1.029,0,0,1.029,375.447,157.805)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ZnJwLTV7Ig2KnQs7cBqmfc3buGsA5mEM">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,375.447,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ibqEurrLQNEcCqXrQxhxUFpt9XLjl4Pk)">
+				<text transform="matrix(1.029,0,0,1.029,391.905,157.805)" id="Text" class="hlr hlr-literal-number-integer" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#1</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ibqEurrLQNEcCqXrQxhxUFpt9XLjl4Pk">
+					<rect x="0" y="0" width="18" height="16" transform="matrix(1.029,0,0,1.029,391.905,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_li1K15d3dY68gMRhBuU2PtSfIhEroaz5)">
+				<text transform="matrix(1.029,0,0,1.029,408.363,157.805)" id="Text" class="hlr hlr-punctuation" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">,</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_li1K15d3dY68gMRhBuU2PtSfIhEroaz5">
+					<rect x="0" y="0" width="10" height="16" transform="matrix(1.029,0,0,1.029,408.363,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_DjUXZWZavzEujgeQdgffJSAK0ySMukDM)">
+				<text transform="matrix(1.029,0,0,1.029,416.592,157.805)" id="Text" class="hlr hlr-keyword-type" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">LSL</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_DjUXZWZavzEujgeQdgffJSAK0ySMukDM">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,416.592,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_Yz74vF27N9VMOaHmNeC912EWwZ1Js4xU)">
+				<text transform="matrix(1.029,0,0,1.029,441.279,157.805)" id="Text" class="hlr hlr-literal-number-integer" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">#12</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_Yz74vF27N9VMOaHmNeC912EWwZ1Js4xU">
+					<rect x="0" y="0" width="26" height="16" transform="matrix(1.029,0,0,1.029,441.279,145.462)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_ZQSbTGdu8xqS5ptkkGwCA7ahMIMIXjiH)">
+				<text transform="matrix(1.029,0,0,1.029,227.325,176.32)" id="Text" class="hlr hlr-name-instruction" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">B.NE</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_ZQSbTGdu8xqS5ptkkGwCA7ahMIMIXjiH">
+					<rect x="0" y="0" width="34" height="16" transform="matrix(1.029,0,0,1.029,227.325,163.977)"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#_clipPath_28KNdQ9gwaIis5z25KQgNNrlyIC1dlNJ)">
+				<text transform="matrix(1.029,0,0,1.029,358.989,176.32)" id="Text" class="hlr hlr-name-function" font-family="JetBrains Mono" font-weight="400" font-size="13px" font-style="normal" font-variant-ligatures="contextual common-ligatures" stroke="none">loc_not_jailbroken</text>
+			</g>
+			<defs>
+				<clipPath id="_clipPath_28KNdQ9gwaIis5z25KQgNNrlyIC1dlNJ">
+					<rect x="0" y="0" width="146" height="16" transform="matrix(1.029,0,0,1.029,358.989,163.977)"/>
+				</clipPath>
+			</defs>
+		</g>
+	</g>
+	<g id="skip_path">
+		<path d=" M 414.783 193.913 L 414.783 206.087 L 780 206.087 L 780 559.13 L 426.957 559.13 L 426.957 571.304" id="Path" fill="none" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(0,150,136)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+		<path d=" M 422.007 570.342 L 426.957 580.242 L 431.906 570.342 Z " fill="rgb(0,150,136)" stroke="none"/>
+	</g>
+	<g id="detec_path">
+		<line x1="366.087" y1="193.913" x2="366.087" y2="218.261" id="Path" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(255,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+		<path d=" M 361.137 217.299 L 366.087 227.198 L 371.037 217.299 Z " fill="rgb(255,0,0)" stroke="none"/>
+		<line x1="366.087" y1="546.957" x2="366.087" y2="571.304" id="Path" vector-effect="non-scaling-stroke" stroke-width="2" stroke="rgb(255,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+		<path d=" M 361.137 570.342 L 366.087 580.242 L 371.037 570.342 Z " fill="rgb(255,0,0)" stroke="none"/>
+	</g>
+	<g id="cydia">
+		<g id="g896">
+			<path d=" M 59.21 384.685 C 52.786 383.127 47.278 377.772 45.639 371.491 C 45.051 369.239 45 365.174 45 320.17 C 45 275.166 45.051 271.101 45.639 268.849 C 47.322 262.401 53.135 256.917 59.749 255.538 C 62.522 254.96 157.478 254.96 160.251 255.538 C 166.865 256.917 172.678 262.401 174.361 268.849 C 174.949 271.101 175 275.166 175 320.17 C 175 365.174 174.949 369.239 174.361 371.491 C 172.678 377.939 166.865 383.423 160.251 384.802 C 157.261 385.425 61.807 385.315 59.21 384.685 L 59.21 384.685 Z " id="path875" fill="rgb(93,46,31)"/>
+			<g id="Group">
+				<path d=" M 117.991 365.337 C 134.192 361.945 147.379 350.366 152.503 335.032 C 154.217 329.906 154.764 326.353 154.764 320.356 C 154.764 316.424 154.568 313.85 154.099 311.621 C 150.174 292.98 136.482 279.286 117.805 275.322 C 113.453 274.398 104.689 274.398 100.336 275.322 C 81.66 279.286 67.968 292.98 64.043 311.621 C 63.128 315.966 63.128 324.746 64.043 329.09 C 67.379 344.935 77.745 357.289 92.604 363.129 C 100.219 366.122 110.125 366.984 117.991 365.337 L 117.991 365.337 Z " id="path873" fill="rgb(255,255,255)"/>
+			</g>
+			<path d=" M 100.868 360.293 C 85.77 357.12 73.766 345.811 69.645 330.877 C 68.461 326.587 68.036 318.914 68.722 314.222 C 70.56 301.655 78.684 290.371 90.375 284.15 C 101.641 278.155 116.5 278.155 127.767 284.15 C 135.553 288.294 141.928 294.813 145.845 302.634 C 150.92 312.772 151.08 326.679 146.241 337.152 C 141.719 346.94 133.19 354.896 123.232 358.618 C 116.675 361.068 107.74 361.737 100.868 360.293 L 100.868 360.293 Z " id="path871" fill="rgb(93,46,31)"/>
+			<g id="Group">
+				<path d=" M 124.495 346.447 L 132.858 342.952 L 132.961 337.694 C 133.018 334.802 132.916 332.435 132.735 332.435 C 132.554 332.435 127.303 334.503 121.067 337.03 L 109.729 341.626 L 109.049 340.468 C 108.675 339.832 107.734 338.308 106.958 337.081 L 105.547 334.851 L 105.543 344.582 L 105.54 354.313 L 110.836 352.127 C 113.749 350.925 119.896 348.369 124.495 346.447 L 124.495 346.447 Z " id="path869" fill="rgb(255,255,255)"/>
+				<path d=" M 102.938 342.099 C 102.938 334.019 102.817 330.577 102.532 330.577 C 102.309 330.577 99.295 331.508 95.833 332.646 L 89.54 334.715 L 87.133 332.8 L 84.726 330.884 L 84.726 335.935 L 84.726 340.985 L 86.654 342.378 C 93.049 347.001 102.422 353.568 102.659 353.592 C 102.813 353.608 102.938 348.436 102.938 342.099 Z " id="path867" fill="rgb(250,249,249)"/>
+				<path d=" M 135.744 328.388 C 135.971 328.168 134.314 319.164 133.972 318.761 C 133.904 318.681 111.065 327.14 106.562 328.913 C 106.204 329.054 105.912 329.303 105.912 329.467 C 105.912 329.721 109.401 335.806 110.948 338.249 C 111.446 339.037 111.579 338.991 123.456 333.854 C 130.058 330.999 135.588 328.539 135.744 328.388 L 135.744 328.388 Z " id="path865" fill="rgb(255,255,255)"/>
+				<path d=" M 98.061 329.754 L 100.432 328.863 L 91.743 321.436 C 86.963 317.352 82.85 313.884 82.601 313.731 C 82.154 313.454 74.877 319.149 74.877 319.776 C 74.877 319.941 78.289 322.92 82.46 326.395 L 90.044 332.713 L 92.867 331.679 C 94.42 331.11 96.757 330.244 98.061 329.754 Z " id="path863" fill="rgb(255,255,255)"/>
+				<path d=" M 117.053 322.777 C 117.041 322.495 109.906 319.423 109.269 319.425 C 108.272 319.428 97.689 323.99 97.993 324.285 C 98.158 324.445 99.43 325.479 100.821 326.583 L 103.35 328.591 L 110.206 325.779 C 113.977 324.233 117.058 322.882 117.053 322.777 Z " id="path861" fill="rgb(255,255,255)"/>
+				<path d=" M 102.84 320.289 L 108.142 318.178 L 108.142 316.201 C 108.142 315.113 108.016 314.22 107.863 314.216 C 107.71 314.212 105.117 315.252 102.102 316.525 L 96.62 318.841 L 96.62 320.621 C 96.62 321.786 96.778 322.4 97.079 322.4 C 97.332 322.4 99.924 321.45 102.84 320.289 L 102.84 320.289 Z " id="path859" fill="rgb(255,255,255)"/>
+				<path d=" M 118.992 319.705 C 118.904 318.428 118.803 317.348 118.768 317.306 C 118.734 317.264 116.831 316.394 114.539 315.373 L 110.372 313.516 L 110.372 315.542 C 110.372 316.657 110.352 317.694 110.328 317.847 C 110.293 318.076 118.251 321.913 118.944 322.002 C 119.059 322.016 119.081 320.983 118.992 319.705 L 118.992 319.705 Z " id="path857" fill="rgb(255,255,255)"/>
+				<path d=" M 95.115 319.891 L 95.097 318.126 L 90.409 314.781 C 84.23 310.372 84.651 310.581 84.793 311.979 C 84.892 312.952 85.713 313.847 89.744 317.373 C 92.401 319.698 94.701 321.612 94.854 321.628 C 95.008 321.644 95.125 320.862 95.115 319.891 L 95.115 319.891 Z " id="path855" fill="rgb(255,255,255)"/>
+				<path d=" M 127.163 319.342 L 131.874 317.502 L 131.994 314.561 C 132.06 312.943 132.074 311.62 132.025 311.621 C 131.975 311.621 129.341 312.915 126.171 314.496 L 120.407 317.371 L 120.412 318.678 C 120.415 319.396 120.519 320.365 120.644 320.831 C 120.911 321.83 120.622 321.896 127.163 319.342 L 127.163 319.342 Z " id="path853" fill="rgb(255,255,255)"/>
+				<path d=" M 101.567 315.114 C 104.263 313.969 106.588 312.922 106.734 312.787 C 107.007 312.534 95.186 304.931 94.519 304.931 C 93.786 304.931 84.913 308.558 84.971 308.834 C 85.024 309.087 96.243 317.197 96.54 317.197 C 96.609 317.197 98.87 316.26 101.567 315.114 Z " id="path851" fill="rgb(255,255,255)"/>
+				<path d=" M 126.539 312.929 C 128.175 312.173 129.916 311.397 130.408 311.204 C 131.237 310.878 131.016 310.676 127.365 308.435 L 123.427 306.019 L 117.178 309.16 L 110.929 312.301 L 112.23 312.855 C 112.946 313.159 114.935 313.99 116.651 314.701 L 119.772 315.993 L 121.669 315.147 C 122.712 314.682 124.904 313.684 126.539 312.929 L 126.539 312.929 Z " id="path849" fill="rgb(255,255,255)"/>
+				<path d=" M 139.331 307.388 C 139.074 307.149 123.403 299.356 123.178 299.356 C 123.064 299.356 123.02 300.234 123.082 301.308 L 123.194 303.259 L 128.389 306.493 C 133.823 309.875 134.53 310.491 134.53 311.842 C 134.53 312.516 134.977 312.201 137.008 310.098 C 138.37 308.687 139.416 307.467 139.331 307.388 L 139.331 307.388 Z " id="path847" fill="rgb(255,255,255)"/>
+				<path d=" M 88.925 305.222 L 94.576 302.807 L 96.129 303.869 C 96.984 304.453 97.778 304.931 97.895 304.931 C 98.011 304.931 98.106 303.628 98.106 302.035 L 98.106 299.139 L 101.277 297.711 C 103.022 296.925 104.392 296.227 104.324 296.158 C 104.228 296.062 93.297 300.373 81.123 305.31 L 80.307 305.641 L 81.68 308.607 L 83.054 311.574 L 83.164 309.605 L 83.274 307.637 L 88.925 305.222 Z " id="path845" fill="rgb(255,255,255)"/>
+				<path d=" M 108.414 306.348 C 108.207 305.837 100.029 301.398 99.77 301.657 C 99.688 301.739 99.741 302.876 99.886 304.185 L 100.151 306.564 L 104.053 308.909 L 107.956 311.254 L 108.283 309.045 C 108.463 307.83 108.522 306.617 108.414 306.348 L 108.414 306.348 Z " id="path843" fill="rgb(255,255,255)"/>
+				<path d=" M 115.801 308.063 L 121.15 305.248 L 121.15 303.046 C 121.15 301.516 121.008 300.852 120.686 300.872 C 120.43 300.887 117.963 302.016 115.203 303.38 L 110.186 305.86 L 110.076 308.369 C 110.015 309.749 110.075 310.878 110.209 310.878 C 110.343 310.878 112.859 309.611 115.801 308.063 L 115.801 308.063 Z " id="path841" fill="rgb(255,255,255)"/>
+				<path d=" M 114.832 301.982 L 119.849 299.444 L 118.548 298.896 C 117.833 298.595 115.796 297.716 114.022 296.943 L 110.795 295.538 L 106.216 297.514 C 103.698 298.601 101.495 299.61 101.321 299.758 C 101.006 300.025 108.736 304.577 109.442 304.54 C 109.647 304.529 112.072 303.378 114.832 301.982 L 114.832 301.982 Z " id="path837" fill="rgb(255,255,255)"/>
+			</g>
+			<path d=" M 86.966 414.198 L 86.966 414.198 L 86.966 414.198 Q 84.753 414.198 83.378 413.765 L 83.378 413.765 L 83.378 413.765 Q 82.002 413.333 81.272 412.558 L 81.272 412.558 L 81.272 412.558 Q 80.542 411.783 80.272 410.739 L 80.272 410.739 L 80.272 410.739 Q 80.003 409.694 80.003 408.47 L 80.003 408.47 L 80.003 402.934 L 80.003 402.934 Q 80.003 401.676 80.267 400.603 L 80.267 400.603 L 80.267 400.603 Q 80.531 399.531 81.255 398.733 L 81.255 398.733 L 81.255 398.733 Q 81.979 397.936 83.361 397.492 L 83.361 397.492 L 83.361 397.492 Q 84.742 397.049 86.966 397.049 L 86.966 397.049 L 86.966 397.049 Q 89.088 397.049 90.385 397.481 L 90.385 397.481 L 90.385 397.481 Q 91.683 397.914 92.356 398.7 L 92.356 398.7 L 92.356 398.7 Q 93.03 399.486 93.266 400.547 L 93.266 400.547 L 93.266 400.547 Q 93.502 401.608 93.502 402.866 L 93.502 402.866 L 93.502 403.068 L 90.234 403.45 L 90.234 402.608 L 90.234 402.608 Q 90.234 401.44 89.942 400.805 L 89.942 400.805 L 89.942 400.805 Q 89.65 400.171 88.942 399.918 L 88.942 399.918 L 88.942 399.918 Q 88.235 399.666 86.966 399.666 L 86.966 399.666 L 86.966 399.666 Q 85.113 399.666 84.226 400.25 L 84.226 400.25 L 84.226 400.25 Q 83.338 400.833 83.338 402.541 L 83.338 402.541 L 83.338 408.807 L 83.338 408.807 Q 83.338 409.941 83.731 410.542 L 83.731 410.542 L 83.731 410.542 Q 84.125 411.143 84.927 411.362 L 84.927 411.362 L 84.927 411.362 Q 85.73 411.581 86.977 411.581 L 86.977 411.581 L 86.977 411.581 Q 88.246 411.581 88.954 411.362 L 88.954 411.362 L 88.954 411.362 Q 89.661 411.143 89.948 410.531 L 89.948 410.531 L 89.948 410.531 Q 90.234 409.919 90.234 408.74 L 90.234 408.74 L 90.234 408.212 L 93.502 408.212 L 93.502 408.515 L 93.502 408.515 Q 93.502 409.739 93.277 410.772 L 93.277 410.772 L 93.277 410.772 Q 93.053 411.806 92.39 412.575 L 92.39 412.575 L 92.39 412.575 Q 91.728 413.344 90.425 413.771 L 90.425 413.771 L 90.425 413.771 Q 89.122 414.198 86.966 414.198 Z  M 96.602 419.353 L 96.602 419.353 L 96.377 416.826 L 96.377 416.826 Q 97.511 416.657 98.337 415.978 L 98.337 415.978 L 98.337 415.978 Q 99.162 415.298 99.679 413.939 L 99.679 413.939 L 99.87 413.445 L 95.321 401.844 L 98.365 401.844 L 101.363 410.02 L 103.901 401.844 L 106.945 401.844 L 102.778 413.771 L 102.778 413.771 Q 101.801 416.567 100.291 417.831 L 100.291 417.831 L 100.291 417.831 Q 98.78 419.094 96.602 419.353 Z  M 108.719 410.267 L 108.719 410.267 L 108.719 405.449 L 108.719 405.449 Q 108.719 403.776 109.904 402.681 L 109.904 402.681 L 109.904 402.681 Q 111.089 401.586 113.728 401.586 L 113.728 401.586 L 113.728 401.586 Q 114.245 401.586 114.845 401.704 L 114.845 401.704 L 114.845 401.704 Q 115.446 401.822 115.974 402.013 L 115.974 402.013 L 115.974 396.892 L 119.029 396.892 L 119.029 413.906 L 116.962 413.906 L 116.637 413.198 L 116.637 413.198 Q 116.053 413.614 115.25 413.889 L 115.25 413.889 L 115.25 413.889 Q 114.447 414.164 113.515 414.164 L 113.515 414.164 L 113.515 414.164 Q 111.066 414.164 109.893 413.125 L 109.893 413.125 L 109.893 413.125 Q 108.719 412.086 108.719 410.267 Z  M 115.974 411.536 L 115.974 411.536 L 115.974 404.135 L 115.974 404.135 Q 115.671 403.989 115.149 403.854 L 115.149 403.854 L 115.149 403.854 Q 114.626 403.72 113.986 403.72 L 113.986 403.72 L 113.986 403.72 Q 112.942 403.72 112.358 404.09 L 112.358 404.09 L 112.358 404.09 Q 111.774 404.461 111.774 405.382 L 111.774 405.382 L 111.774 410.312 L 111.774 410.312 Q 111.774 411.233 112.319 411.626 L 112.319 411.626 L 112.319 411.626 Q 112.863 412.019 113.874 412.019 L 113.874 412.019 L 113.874 412.019 Q 114.503 412.019 115.064 411.884 L 115.064 411.884 L 115.064 411.884 Q 115.626 411.75 115.974 411.536 Z  M 122.173 413.906 L 122.173 401.844 L 125.217 401.844 L 125.217 413.906 L 122.173 413.906 L 122.173 413.906 Z  M 122.151 399.868 L 122.151 396.892 L 125.228 396.892 L 125.228 399.868 L 122.151 399.868 L 122.151 399.868 Z  M 131.36 414.164 L 131.36 414.164 L 131.36 414.164 Q 129.81 414.164 128.839 413.266 L 128.839 413.266 L 128.839 413.266 Q 127.867 412.367 127.867 410.874 L 127.867 410.874 L 127.867 410.874 Q 127.867 410.02 128.215 409.357 L 128.215 409.357 L 128.215 409.357 Q 128.563 408.695 129.484 408.128 L 129.484 408.128 L 129.484 408.128 Q 130.405 407.561 132.124 407.021 L 132.124 407.021 L 132.124 407.021 Q 133.527 406.572 134.196 406.19 L 134.196 406.19 L 134.196 406.19 Q 134.864 405.809 134.864 405.18 L 134.864 405.18 L 134.864 405.18 Q 134.864 404.45 134.431 404.085 L 134.431 404.085 L 134.431 404.085 Q 133.999 403.72 132.966 403.72 L 132.966 403.72 L 132.966 403.72 Q 131.82 403.72 131.455 404.169 L 131.455 404.169 L 131.455 404.169 Q 131.09 404.618 131.09 405.314 L 131.09 405.314 L 131.09 405.786 L 128.227 405.786 L 128.227 405.427 L 128.227 405.427 Q 128.227 403.675 129.395 402.63 L 129.395 402.63 L 129.395 402.63 Q 130.563 401.586 133.033 401.586 L 133.033 401.586 L 133.033 401.586 Q 134.841 401.586 135.897 402.091 L 135.897 402.091 L 135.897 402.091 Q 136.953 402.597 137.413 403.512 L 137.413 403.512 L 137.413 403.512 Q 137.874 404.427 137.874 405.674 L 137.874 405.674 L 137.874 410.447 L 137.874 410.447 Q 137.874 411.267 138.081 411.519 L 138.081 411.519 L 138.081 411.519 Q 138.289 411.772 138.851 411.772 L 138.851 411.772 L 138.727 413.996 L 138.087 413.996 L 138.087 413.996 Q 136.829 413.996 136.133 413.647 L 136.133 413.647 L 136.133 413.647 Q 135.437 413.299 135.111 412.569 L 135.111 412.569 L 135.111 412.569 Q 134.628 413.209 133.656 413.687 L 133.656 413.687 L 133.656 413.687 Q 132.685 414.164 131.36 414.164 Z  M 132.382 412.131 L 132.382 412.131 L 132.382 412.131 Q 132.943 412.131 133.696 411.817 L 133.696 411.817 L 133.696 411.817 Q 134.448 411.502 134.864 410.851 L 134.864 410.851 L 134.864 407.796 L 134.864 407.796 Q 134.561 408.043 133.898 408.341 L 133.898 408.341 L 133.898 408.341 Q 133.235 408.639 132.472 408.919 L 132.472 408.919 L 132.472 408.919 Q 131.472 409.29 131.158 409.739 L 131.158 409.739 L 131.158 409.739 Q 130.843 410.188 130.843 410.705 L 130.843 410.705 L 130.843 410.705 Q 130.843 411.435 131.27 411.783 L 131.27 411.783 L 131.27 411.783 Q 131.697 412.131 132.382 412.131 Z " id="Compound Path" fill="rgb(93,46,31)"/>
+		</g>
+	</g>
+</svg>
+
