@@ -7,6 +7,7 @@ date_published: "2017-07-04T00:00:00Z"
 date_modified: "2026-08-04T19:53:38+02:00"
 language: "en-US"
 section: "publication"
+venue: "RMLL \u0026 Cybersecurity France-Japan"
 tags: []
 categories: []
 ---
@@ -29,3 +30,9 @@ LIEF is a cross-platform library and it can be used through a Python, C++ and C 
 [PDF document](17-07-RMLL-LIEF.pdf)
 
 You can also grab the slides of the talk given at [Cybersecurity France-Japan](https://project.inria.fr/FranceJapanICST/wokshops/2017-program/presentations/): [17-04-cybersecurity-frjp-LIEF.pdf](17-04-cybersecurity-frjp-LIEF.pdf)
+
+## Resources
+
+- Presented at: RMLL & Cybersecurity France-Japan
+- [Slides (PDF)](https://www.romainthomas.fr/publication/slides/17-07-RMLL-LIEF.pdf)
+- [External page](https://prog2017.rmll.info/programme/securite-entre-transparence-et-opacite/lief-bibliotheque-d-instrumentation-de-formats-executables-mais-ca-fait-bife-c?lang=en)

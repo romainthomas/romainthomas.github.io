@@ -16,3 +16,8 @@ categories: []
 > Binary obfuscation protects software intellectual property by transforming a binary while preserving its semantics. It preserves the original information among irrelevant data to …
 
 [PDF document](misc82-triton.pdf)
+
+## Resources
+
+- [Paper (PDF)](https://www.romainthomas.fr/publication/triton/misc82-triton.pdf)
+- [Project page](https://triton.quarkslab.com/)

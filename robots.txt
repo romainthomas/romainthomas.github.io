@@ -1,5 +1,9 @@
 # Public research content is available to search and AI retrieval crawlers.
+# Curated guidance for language models: https://www.romainthomas.fr/llms.txt
+# Full Markdown corpus: https://www.romainthomas.fr/llms-full.txt
+
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 Sitemap: https://www.romainthomas.fr/sitemap.xml

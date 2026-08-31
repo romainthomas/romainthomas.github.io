@@ -29,3 +29,9 @@ The first part deals with the native library loading restriction while the secon
 
 
 [PDF document](/publication/android-restrictions-bypass/report.pdf)
+
+## Resources
+
+- [Paper (PDF)](https://www.romainthomas.fr/publication/android-restrictions-bypass/report.pdf)
+- [Source code](https://github.com/quarkslab/android-restriction-bypass)
+- [External page](https://blog.quarkslab.com/android-runtime-restrictions-bypass.html)

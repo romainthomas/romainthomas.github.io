@@ -10,7 +10,9 @@ Canonical site: https://www.romainthomas.fr/
 
 - [XML sitemap](https://www.romainthomas.fr/sitemap.xml): Canonical crawlable URLs and modification dates.
 - [JSON content index](https://www.romainthomas.fr/index.json): Full text and metadata for published pages.
+- [Full content dump](https://www.romainthomas.fr/llms-full.txt): Every published page concatenated as Markdown for one-shot ingestion.
 - [Heading-level retrieval index](https://www.romainthomas.fr/index.chunks.json): Versioned, anchored Markdown and plain-text chunks with content hashes.
+- [Site RSS feed](https://www.romainthomas.fr/index.xml): Every published page across all sections.
 - [Articles RSS feed](https://www.romainthomas.fr/post/index.xml): Recent long-form technical research.
 
 ## Research articles

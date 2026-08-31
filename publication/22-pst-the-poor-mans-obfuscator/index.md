@@ -7,6 +7,7 @@ date_published: "2022-07-04T00:00:00Z"
 date_modified: "2026-08-04T19:53:38+02:00"
 language: "en-US"
 section: "publication"
+venue: "Pass The Salt"
 tags: []
 categories: []
 ---
@@ -30,3 +31,8 @@ categories: []
 ##  Assets
 
 https://github.com/romainthomas/the-poor-mans-obfuscator
+
+## Resources
+
+- Presented at: Pass The Salt
+- [Paper (PDF)](https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/whitepaper.pdf)

@@ -7,6 +7,7 @@ date_published: "2022-05-12T00:00:00Z"
 date_modified: "2026-08-04T19:53:38+02:00"
 language: "en-US"
 section: "publication"
+venue: "SSTIC \u0026 BlackHat Asia"
 tags: []
 categories: []
 ---
@@ -34,3 +35,8 @@ categories: []
 ##  Assets
 
 https://github.com/romainthomas/droidguard-samples
+
+## Resources
+
+- Presented at: SSTIC & BlackHat Asia
+- [Paper (PDF)](https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/whitepaper.pdf)

@@ -7,6 +7,7 @@ date_published: "2021-11-05T00:00:00Z"
 date_modified: "2026-08-04T19:53:38+02:00"
 language: "en-US"
 section: "publication"
+venue: "Ekoparty"
 tags: []
 categories: []
 ---
@@ -28,3 +29,8 @@ categories: []
 ##  Blog Post
 
 [*PGSharp: Analysis of a Cheating App for PokemonGO*](/post/21-11-pgsharp-analysis)
+
+## Resources
+
+- Presented at: Ekoparty
+- [Source code](https://github.com/romainthomas/pgsharp)

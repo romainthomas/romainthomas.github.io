@@ -7,6 +7,7 @@ date_published: "2020-10-01T00:00:00Z"
 date_modified: "2026-08-04T19:53:38+02:00"
 language: "en-US"
 section: "publication"
+venue: "BlackHat Asia"
 tags: []
 categories: []
 ---
@@ -41,3 +42,9 @@ categories: []
 [Video](qbdi-tencent-packer.mp4)
 
 *Note: The videos are intentionally quick. Do not hesitate to pause them.*
+
+## Resources
+
+- Presented at: BlackHat Asia
+- [Paper (PDF)](https://www.romainthomas.fr/publication/20-bh-asia-dbi/asia-20-Thomas-Dynamic-Binary-Instrumentation-Techniques-to-Address-Native-Code-Obfuscation-wp.pdf)
+- [External page](https://www.blackhat.com/asia-20/briefings/schedule/#dynamic-binary-instrumentation-techniques-to-address-native-code-obfuscation-18309)

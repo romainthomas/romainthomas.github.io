@@ -7,6 +7,7 @@ date_published: "2016-11-10T00:00:00Z"
 date_modified: "2022-05-14T15:55:15+02:00"
 language: "en-US"
 section: "publication"
+venue: "CSAW SOS"
 tags: []
 categories: []
 ---
@@ -22,3 +23,9 @@ categories: []
 ##  Video
 
 [Video](how-triton-can-help-to-reverse-virtual-machine-based-software-protections.mp4)
+
+## Resources
+
+- Presented at: CSAW SOS
+- [Slides (PDF)](https://triton.quarkslab.com/files/csaw2016-sos-rthomas-jsalwan.pdf)
+- [Project page](https://triton.quarkslab.com/)
