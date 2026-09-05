@@ -4,7 +4,7 @@ description: "This blog post analyzes the Frida and Jailbreak detection in Pokem
 canonical_url: "https://www.romainthomas.fr/post/21-07-pokemongo-anti-frida-jailbreak-bypass/"
 authors: ["Romain Thomas"]
 date_published: "2021-07-18T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "post"
 tags: ["ios","reverse engineering","obfuscation"]
@@ -170,8 +170,33 @@ a way to perform actions (or hook) before they are executed.
 On Android, when we need to analyze a library's constructors, we can hook the ``call_array`` function from
 [Bionic's linker (ELF loader)](https://github.com/aosp-mirror/platform_bionic/blob/c44b1d0676ded732df4b3b21c5f798eacae93228/linker/linker_soinfo.cpp#L488):
 
-<script src="https://gist.github.com/romainthomas/c10298387a921df730c1556c2ee9cecb.js"></script>
+```cpp
+// Mangled as __dl__ZL10call_arrayIPFviPPcS1_EEvPKcPT_mbS5_ in /system/bin/linker64
 
+template <typename F>
+static void call_array(const char* array_name __unused,
+                       F* functions,
+                       size_t count,
+                       bool reverse,
+                       const char* realpath) {
+  if (functions == nullptr) {
+    return;
+  }
+
+  TRACE("[ Calling %s (size %zd) @ %p for '%s' ]", array_name, count, functions, realpath);
+
+  int begin = reverse ? (count - 1) : 0;
+  int end = reverse ? -1 : count;
+  int step = reverse ? -1 : 1;
+
+  for (int i = begin; i != end; i += step) {
+    TRACE("[ %s[%d] == %p ]", array_name, i, functions[i]);
+    call_function("function", functions[i], realpath);
+  }
+
+  TRACE("[ Done calling %s for '%s' ]", array_name, realpath);
+}
+```
 If we try to apply the same approach on iOS, the mirror of the ELF loader on iOS is ``dyld`` which contains
 most of the logic to load Mach-O files.
 It turns out that at some points, the Mach-O's constructors are processed in the ``doModInitFunctions`` function

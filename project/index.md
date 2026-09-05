@@ -12,7 +12,7 @@ section: "project"
 
 - [Symbi](https://www.romainthomas.fr/project/symbi/index.md): A dynamic trace symbolizer built on DynaMIR.
 
-- [MCStone](https://www.romainthomas.fr/project/mcstone/index.md): A clean, high-performance assembler and disassembler built on LLVM's MC layer for production reverse-engineering workloads.
+- [MCStone](https://www.romainthomas.fr/project/mcstone/index.md): A clean, high-performance assembler and disassembler built on LLVM's MC layer for engineering and reverse-engineering workflows.
 
 - [Lypid](https://www.romainthomas.fr/project/lypid/index.md): A user-friendly library for inspecting and generating DWARF and PDB debug information.
 

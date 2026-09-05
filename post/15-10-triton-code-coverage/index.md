@@ -4,7 +4,7 @@ description: "This blog post introduces code coverage with Triton"
 canonical_url: "https://www.romainthomas.fr/post/15-10-triton-code-coverage/"
 authors: ["Jonathan Salwan","Romain Thomas"]
 date_published: "2015-10-12T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "post"
 tags: []

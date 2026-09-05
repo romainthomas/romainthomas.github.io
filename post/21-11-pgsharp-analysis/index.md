@@ -4,7 +4,7 @@ description: "This blog post is about the internal mechanisms of PGSharp, a chea
 canonical_url: "https://www.romainthomas.fr/post/21-11-pgsharp-analysis/"
 authors: ["Romain Thomas"]
 date_published: "2021-11-07T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "post"
 tags: ["Android","reverse engineering","obfuscation"]
@@ -137,7 +137,7 @@ You can also check the slides to get an overview of the content:
 <p><b>Enjoy!</b></p>
 </div>
 
-## [  Code Protection](#toc) {#code-protection}
+## Code Protection
 
 PokemonGO is a target of choice for reverse engineers and some critical functionalities are protected by a commercial solution.
 It is worth mentioning that only a subset of the game is obfuscated. For instance, the "Java" part of the
@@ -151,7 +151,7 @@ On the other hand, PGSharp uses different layers of obfuscation to prevent its a
 First of all, it uses O-LLVM to obfuscate the native code that includes, at least, control-flow flattening and
 string encryption. Nevertheless, the obfuscation is *relatively* weak against emulation and static analysis[^weak-obf].
 
-### [  Lua VM](#toc) {#lua-vm}
+### Lua VM
 
 Some obfuscation techniques are based on transforming the original code through a VM (like [VMProtect](https://vmpsoft.com/)).
 It adds another layer to reverse, as we need to understand the VM architecture before being able to understand the original semantic of the code.
@@ -225,7 +225,7 @@ Among all the Lua C functions, some of them are worth identifying to ease revers
 
 
 - ``lua_pushstring``
-  : > *"Pushes the zero-terminated string pointed to by's onto the stack."*
+  : > *"Pushes the zero-terminated string pointed to onto the stack."*
 
   : This function enables to dynamically recover strings that might not be present
     in the native code or somehow encoded:
@@ -266,7 +266,7 @@ void native_listener_on_enter(GumInvocationListener *listener, GumInvocationCont
 
 
 
-### [  Java Obfuscation](#toc) {#java-obfuscation}
+### Java Obfuscation
 
 Contrary to the PokemonGO's Java layer, PGSharp protects its Java code with Proguard and the strings are xored
 with the hardcoded key:
@@ -337,7 +337,7 @@ The whole Jadx plugin is available on GitHub: [PGSharpStrings.java](https://gith
 
 <hr width="50%" />
 
-## [  Cheat Mechanisms](#toc) {#cheat-mechanisms}
+## Cheat Mechanisms
 
 One ~~disruptive~~ feature of PGSharp is that it does not require a rooted device. Until recently,
 most of the PokemonGO cheating apps required a jailbroken or a rooted device which raises a barrier
@@ -360,7 +360,7 @@ A naive comparison (cf. [zip_diff.py](https://github.com/romainthomas/pgsharp/bl
 The high level of similarity between the two applications, associated with a different signature
 confirms that PGSharp repackaged the original application.
 
-#### [  DEX Files Comparison](#toc) {#dex-files-diff}
+#### DEX Files Comparison
 
 To figure out which parts of the DEX files have been modified, we can use LIEF (yes, LIEF can <u><b>read</b></u> the DEX format).
 Basically, the idea is to check which method(s) has a bytecode whose size is different from the real PokemonGO
@@ -445,7 +445,7 @@ static {
 Now, let's look at <b class="red">libmain.so</b>
 
 
-#### [  libmain.so](#toc) {#libmain}
+#### libmain.so
 
 Compared to the original PokemonGO APK, <b class="red">libmain.so</b> in PGSharp is substantially larger. Moreover,
 the ELF metadata leaks the original file name of the file:
@@ -549,7 +549,7 @@ Long story short, PGSharp repackages the PokemonGO application and implements it
 
 The functionalities of PGSharp heavily rely on hooking but not the hooking you might think of ...
 
-### [  Signature Bypass](#toc) {#signature-bypass}
+### Signature Bypass
 
 As it is detailed in the next section, <b class="red">libmain.so</b> dynamically loads another APK. Within
 this APK, and more precisely in the class ``androidx.appcompat.app.AppCompatDelegateImpl``[^rename], we can notice this method:
@@ -631,7 +631,7 @@ The following figure outlines the process:
 
 ![Mock Android PackageManager](mock_signature.png)
 
-### [  Dynamic APK Loading](#toc) {#dynamic-apk-loading}
+### Dynamic APK Loading
 
 In the Lua script ``plugin.lua``, PGSharp defines an ``init`` function that performs the following
 actions:
@@ -733,7 +733,7 @@ plugin.classloader     = u_classloader
 ```
 
 
-### [  GPS Spoofing](#toc) {#gps-spoofing}
+### GPS Spoofing
 
 Since PokemonGO heavily relies on the user's location, the must-have feature for the PokemonGO cheat engines
 is to be able to spoof the GPS location.
@@ -774,7 +774,7 @@ the real location.
 
 And this is where the fun reaches another level :rocket:
 
-### [  JNIEnv Proxifier](#toc) {#jnienv-proxifier}
+### JNIEnv Proxifier
 
 I would assume that ``nativeLocationUpdate`` and ``nativeAddLocationProviders`` are critical
 enough to be protected against hooking. It turns out that PGSharp embeds a hooking framework to hook
@@ -919,7 +919,7 @@ It results that JNI functions used by ``libNianticLabsPlugin.so`` have been *red
 
 
 
-### [  Unity Hooks](#toc) {#unity-hooks}
+### Unity Hooks
 
 In addition to GPS spoofing, PGSharp provides other functionalities such as,
 Pokemon feed, skip evolve animation ...
@@ -1008,7 +1008,7 @@ quickly understand that the new behavior of ``OpenURL`` is located in the functi
 
 In this hook, they check if PokemonGO is opening its Google Play URL and redirect the user to the PGSharp home page.
 
-### [  Network Communications and Encryption](#toc) {#network}
+### Network Communications and Encryption
 
 The cheating application communicates with its servers through the TLS/HTTP protocol and adds another layer
 of encryption on the top of TLS. To encrypt the HTTP payload, they use AES in the CBC mode.
@@ -1153,7 +1153,7 @@ Here are examples of endpoints and the data sent by PGSharp:
     ```
 
 
-### [  SafetyNet](#toc) {#safetynet}
+### SafetyNet
 
 ![safetynet](snet.svg)
 
@@ -1248,7 +1248,7 @@ If they would have managed to break SafetyNet, the ``apkDigestSha256`` value wou
 The JWT attestation is forwarded to Niantic so they might check the consistency of ``apkDigestSha256``
 but they might only focus on the signature (which can be faked) and not this value ...
 
-### [  When PGSharp avoids PokemonGO pitfalls](#toc) {#pgsharp-signature-check}
+### When PGSharp avoids PokemonGO pitfalls
 
 As discussed in the section [*Signature Bypass*](#signature-bypass), PGSharp
 tricks the Android PackageManager to mock the signature of the application.
@@ -1261,7 +1261,7 @@ whose one of these elements is the APK's signature. But instead of using the And
 retrieve the signature, they use [DimaKoz/stunning-signature](https://github.com/DimaKoz/stunning-signature)
 to compute the MD5 digest of the signature.
 
-## [  Final Words](#toc) {#final-words}
+## Final Words
 
 When I started to look at this cheating app, I did not expect to find such nice tricks and challenges.
 The PGSharp's authors know the sneaky tricks to hinder reverse engineering. Unfortunately,
@@ -1313,13 +1313,13 @@ find the symbol list of <b class="red">libmain.so</b> based on reverse engineeri
 
 
 
-## [  Acknowledgments](#toc) {#acknowledgments}
+## Acknowledgments
 
 This analysis has been independently done in my spare time while being at [Quarkslab](https://www.quarkslab.com) and
 <a href="https://www.ul.com" target="_blank" rel="noopener" class="ul">UL</a>,
 my current employer.
 
-## [  Annexes](#toc) {#annexes}
+## Annexes
 
 ### Third-Party
 

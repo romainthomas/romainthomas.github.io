@@ -4,7 +4,7 @@ description: "This second blog post deals with native code obfuscation and RASP 
 canonical_url: "https://www.romainthomas.fr/post/22-09-ios-obfuscation-syscall-hooking/"
 authors: ["Romain Thomas"]
 date_published: "2022-09-13T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "post"
 tags: ["ios","reverse engineering","obfuscation"]
@@ -317,7 +317,7 @@ reacts by crashing the application. This crash occurs through different techniqu
 1. Corrupting a global pointer
 2. Executing a break instruction (BRK #1)
 3. Trashing the link register and frame register (LR / FP)
-4. Calling <span class="dark-boxed dark-yellow">`objc_msgSend`</span> with corrupted parameters
+4. Calling `objc_msgSend` with corrupted parameters
 
 The instructions involved in crashing the application are **inlined** in the function where the check occurs.
 This means that there is as many *crash routine* as there are RASP checks.

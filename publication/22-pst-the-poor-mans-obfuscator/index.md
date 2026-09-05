@@ -4,7 +4,7 @@ description: "The purpose of this publication is to present ELF and Mach-O trans
 canonical_url: "https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/"
 authors: ["Romain Thomas"]
 date_published: "2022-07-04T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "publication"
 venue: "Pass The Salt"
@@ -16,11 +16,11 @@ categories: []
 
 > The purpose of this publication is to present ELF and Mach-O transformations which impact or hinder disassemblers like IDA, BinaryNinja, Ghidra, and Radare2.
 
-##  [Slides](slides.pdf)
+##  Slides
 
 [PDF document](slides.pdf)
 
-##  [Whitepaper](whitepaper.pdf)
+##  Whitepaper
 
 [PDF document](whitepaper.pdf)
 

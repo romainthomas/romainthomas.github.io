@@ -4,7 +4,7 @@ description: "We are open-sourcing LIEF, a library to parse and manipulate ELF, 
 canonical_url: "https://www.romainthomas.fr/post/lief-release/"
 authors: ["Romain Thomas"]
 date_published: "2017-04-04T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "post"
 tags: ["lief"]

@@ -4,7 +4,7 @@ description: "A modern, cross-platform Objective-C class dump that reconstructs 
 canonical_url: "https://www.romainthomas.fr/project/icdump/"
 authors: ["Romain Thomas"]
 date_published: "2023-01-01T00:00:00Z"
-date_modified: "2026-08-04T19:53:38+02:00"
+date_modified: "2026-09-05T05:53:50+02:00"
 language: "en-US"
 section: "project"
 tags: ["Objective-C","Mach-O","LIEF Extended"]
