@@ -42,6 +42,7 @@ Canonical site: https://www.romainthomas.fr/
 - [Code coverage using a dynamic symbolic execution](https://www.romainthomas.fr/post/15-10-triton-code-coverage/index.md): This blog post introduces code coverage with Triton
 
 ## Publications
+- [Rethinking Reverse Engineering for the AI Era](https://www.romainthomas.fr/publication/26-rethinking-reverse-engineering-for-the-ai-era/index.md): New tooling and analysis primitives for AI-assisted reverse engineering of obfuscated native code, targeting small, open-weight language models. Presented at Calif.
 - [The Poor Man's Obfuscator](https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/index.md): The purpose of this publication is to present ELF and Mach-O transformations which impact or hinder disassemblers like IDA, BinaryNinja, Ghidra, and Radare2. Presented at Pass The Salt.
 - [DroidGuard: A Deep Dive into SafetyNet](https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/index.md): SafetyNet is the Android component developed by Google to verify the devices' integrity. These checks are used by the developers to prevent running applications on devices that … Presented at SSTIC & BlackHat Asia.
 - [PGSharp: Analysis of a Cheat Engine on Android](https://www.romainthomas.fr/publication/21-ekoparty-mobile-hacking-space-pgsharp/index.md): PGSharp is a cheating app for PokemonGO that works on non-rooted devices. This talk introduces its functionalities and the protections used to prevent reverse-engineering. Presented at Ekoparty.

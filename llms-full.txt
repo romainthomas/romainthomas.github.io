@@ -10116,6 +10116,23 @@ expressions are too complex or to deal with symbolic execution and abstract doma
 
 ---
 
+# Rethinking Reverse Engineering for the AI Era
+
+- Canonical: https://www.romainthomas.fr/publication/26-rethinking-reverse-engineering-for-the-ai-era/
+- Markdown: https://www.romainthomas.fr/publication/26-rethinking-reverse-engineering-for-the-ai-era/index.md
+- Section: publication
+- Tags: reverse engineering, obfuscation, binary analysis, LLMs
+- Presented at: Calif
+
+> New tooling and analysis primitives for AI-assisted reverse engineering of obfuscated native code, targeting small, open-weight language models.
+
+##  Slides
+
+[PDF document](slides.pdf)
+
+
+---
+
 # The Poor Man's Obfuscator
 
 - Canonical: https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/

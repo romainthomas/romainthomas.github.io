@@ -10,6 +10,8 @@ section: "publication"
 
 > Conference talks, white papers, and technical publications on program analysis, executable formats, software protection, and mobile security.
 
+- [Rethinking Reverse Engineering for the AI Era](https://www.romainthomas.fr/publication/26-rethinking-reverse-engineering-for-the-ai-era/index.md): New tooling and analysis primitives for AI-assisted reverse engineering of obfuscated native code, targeting small, open-weight language models.
+
 - [The Poor Man's Obfuscator](https://www.romainthomas.fr/publication/22-pst-the-poor-mans-obfuscator/index.md): The purpose of this publication is to present ELF and Mach-O transformations which impact or hinder disassemblers like IDA, BinaryNinja, Ghidra, and Radare2.
 
 - [DroidGuard: A Deep Dive into SafetyNet](https://www.romainthomas.fr/publication/22-sstic-blackhat-droidguard-safetynet/index.md): SafetyNet is the Android component developed by Google to verify the devices' integrity. These checks are used by the developers to prevent running applications on devices that …
