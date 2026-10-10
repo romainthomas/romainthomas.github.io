@@ -1,0 +1,33 @@
+.article-content h2,
+.article-content h3 {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.article-content h2 > .fas,
+.article-content h3 > .fas {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  min-width: 0;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, #e1a654 52%, var(--border));
+  background: radial-gradient(circle at 72% 22%, rgba(225, 166, 84, .22), transparent 45%),
+              color-mix(in srgb, #e1a654 9%, var(--surface));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--surface) 65%, transparent),
+              var(--shadow-sm);
+  color: var(--warning);
+}
+
+.article-content h2 > .fas {
+  width: 2.4rem;
+  border-radius: .6rem;
+  font-size: .92rem;
+}
+
+.article-content h3 > .fas {
+  width: 1.9rem;
+  border-radius: 50%;
+  font-size: .72rem;
+}
